@@ -1,0 +1,24 @@
+{
+  "_comment": "Template for weekly pick tracking. Copy to picks-week-XX.json",
+  "week": 0,
+  "season": "2026-2027",
+  "deadline": "YYYY-MM-DDTHH:MM:SS-05:00",
+  "matchups": [
+    {
+      "id": 1,
+      "away": "Team A",
+      "home": "Team B",
+      "kickoff": "YYYY-MM-DDTHH:MM:SS-05:00",
+      "winner": null
+    }
+  ],
+  "picks": {
+    "+14438571551": { "name": "Chris", "picks": {}, "submitted_at": null },
+    "+13038879556": { "name": "George", "picks": {}, "submitted_at": null },
+    "+16023120087": { "name": "TBD", "picks": {}, "submitted_at": null },
+    "+18173130383": { "name": "TBD", "picks": {}, "submitted_at": null },
+    "+13038874313": { "name": "TBD", "picks": {}, "submitted_at": null },
+    "+13038878123": { "name": "TBD", "picks": {}, "submitted_at": null }
+  },
+  "status": "pending"
+}
