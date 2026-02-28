@@ -71,55 +71,10 @@
   - First manual send: 2026-02-24 (Combine Week edition)
 
 ### D&D Campaign / DM Engine Project 🐉🎲 (started 2026-02-27)
-- **Goal:** King Koopa acts as DM for Chris and Martin over chat, running published D&D 5e adventures
-- **Target campaign:** Dragonlance: Shadow of the Dragon Queen
-- **Test campaign:** D&D vs Rick and Morty (Lost Dungeon of Rickedness)
-- **Players:** Chris + Martin (+4915122019645)
-
-#### DDB Integration (VALIDATED ✅)
-- **Cobalt cookie:** `~/.openclaw/secrets/ddb-cobalt.txt`
-- **DDB account:** elronse (cwatts7622@me.com)
-- **Auth endpoint:** `auth-service.dndbeyond.com/v1/cobalt-token`
-- **Access confirmed:** items (2,854), spells (555), monsters (5,512 with full stat blocks)
-- **DDB campaigns:** Lost in a New Land, Balder's Gate, Dragonlance, Horrors in Barovia, RIT
-- ⚠️ Cobalt cookie EXPIRES on logout — don't log out of DDB while pulling data
-
-#### DDB Scraping Pipeline (VALIDATED ✅)
-- **Reusable scraper:** `projects/dnd/engine/scrape_ddb.py`
-- **Content selector:** `<div class="p-article-content u-typography-format">`
-- **URL patterns:** Old format `/sources/<slug>/` or new `/sources/dnd/<slug>/`
-- **Key slugs:** ddvram (Rick & Morty), sotdq (Dragonlance), phb (PHB), dmg (DMG), mm (MM)
-- **Gotcha:** TOC pages may redirect to marketplace even if owned; individual chapters work fine
-
-#### Content Library (projects/dnd/)
-| File | Content | Size |
-|------|---------|------|
-| rick-and-morty-adventure.md | Full R&M adventure | 346 KB |
-| dragonlance-shadow-of-the-dragon-queen.md | Full SotDQ | 680 KB |
-| players-handbook-2014.md | PHB 2014 (main) | 893 KB |
-| players-handbook-2014-classes.md | All 12 class guides | 299 KB |
-| dungeon-masters-guide-2014.md | DMG 2014 | 1,151 KB |
-| monster-manual-2014.md | MM 2014 | 1,174 KB |
-| **Total** | | **4.5 MB** |
-
-#### DM Engine (projects/dnd/engine/)
-- `dice.py` — Dice roller (standard rolls, attacks, checks, initiative)
-- `CAMPAIGN_STATE.md` — Tracks party, HP, inventory, location, combat
-- `DM_GUIDE.md` — DM principles and session management rules
-- `scrape_ddb.py` — Reusable DDB content scraper
-
-#### Architecture Decision (2026-02-27)
-- DDB Maps VTT: NO public API, closed platform, can't control programmatically
-- **Foundry VTT is the chosen platform** for visual maps + tactical play
-  - Chris has Foundry VTT available on his network, may install on this Mac
-  - Plan: Foundry + DDB Importer + King Koopa controlling Foundry via API = full DM stack
-  - Need to research: Foundry's API/websocket for programmatic token movement, fog of war, combat
-- For text-only play (WhatsApp): theater of the mind + ASCII maps works fine
-
-#### Test Campaign Status
-- Chris chose **Keth Silverson** (Half-Orc Rogue, Urchin, Level 1)
-- Opening narration delivered, then paused for architecture planning
-- Chris wants to get Foundry integrated before continuing serious play
+- **Goal:** King Koopa as AI DM for Chris + Martin, running 5e adventures with Foundry VTT
+- **Status:** Phase 1 complete — waiting on Chris to install Foundry VTT on this Mac
+- **Full status & plan:** `projects/dnd/STATUS.md`
+- **GitHub backup:** github.com/cwatts-sage/koopa.git (deploy key at ~/.ssh/kingkoopa-deploy)
 
 ## Origin
 - Created 2026-02-23 by Toadstool 🍄 (sister instance) on behalf of Chris
