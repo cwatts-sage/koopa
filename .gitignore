@@ -1,0 +1,17 @@
+# Secrets — NEVER commit
+secrets/
+*.secret
+*.key
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (if any)
+node_modules/
+
+# Temp files
+*.tmp
+*.swp
+*~
