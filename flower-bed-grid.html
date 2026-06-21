@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>body{margin:0;padding:0;background:white;}</style>
+</head>
+<body>
+<svg width="1200" height="950" viewBox="0 0 1200 950" xmlns="http://www.w3.org/2000/svg" style="font-family:Arial,Helvetica,sans-serif">
+
+<rect width="1200" height="950" fill="white"/>
+<text x="600" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">🌸 Flower Bed Plan — Grid Paper (1 square = 10 cm)</text>
+
+<defs>
+  <pattern id="minG" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#B8D4E3" stroke-width="0.5"/>
+  </pattern>
+  <pattern id="majG" width="100" height="100" patternUnits="userSpaceOnUse">
+    <rect width="100" height="100" fill="url(#minG)"/>
+    <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#7BAAC4" stroke-width="1"/>
+  </pattern>
+  <marker id="aS" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto">
+    <path d="M8,0 L0,4 L8,8" fill="none" stroke="#C62828" stroke-width="1.2"/>
+  </marker>
+  <marker id="aE" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0,0 L8,4 L0,8" fill="none" stroke="#C62828" stroke-width="1.2"/>
+  </marker>
+  <marker id="gS" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto">
+    <path d="M8,0 L0,4 L8,8" fill="none" stroke="#757575" stroke-width="1.2"/>
+  </marker>
+  <marker id="gE" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0,0 L8,4 L0,8" fill="none" stroke="#757575" stroke-width="1.2"/>
+  </marker>
+</defs>
+
+<!--
+  LAYOUT — scale 2px per cm
+  
+  HOUSE: top-left, 150×49.5cm → (0,0)-(300,99)
+  
+  BED 1: narrow strip along house right wall going down
+  20×82cm → x=300-340, y=99-263
+  
+  BED 2: one continuous irregular-shaped bed to the right
+  - Top edge: 128cm wide (x=340 to x=596), then 64cm more (x=596 to x=724)
+  - Left side depth (near house): 58cm (y=99 to y=215)
+  - Right side has semicircular curve, total height 130cm (y=99 to y=359)
+  - Bottom edge ANGLES/TAPERS from the shallow left side to the deep right side
+  - NOT a clean L-shape — the bottom is a diagonal/curved line
+  - The "64" at the bottom indicates the width near the curve base
+  
+  So Bed 2's outline:
+  Top-left: (340, 99)
+  Top: straight across to (724, 99)
+  Right: semicircle from (724, 99) to (724, 359)
+  Bottom-right: (724, 359) — then the bottom edge angles up-left
+  
+  The bottom edge goes from (724, 359) to roughly (340, 215)
+  — a diagonal line rising from 130cm depth to 58cm depth
+  
+  The "64" at the bottom = the width at the deepest part near the curve
+  From about x=660 to x=724 at y≈359, the bed is 64cm wide at that depth.
+  
+  Actually, thinking about it more naturally as a garden bed:
+  - The top edge runs along the house/property line (straight)
+  - The bottom edge is a natural curved/angled border
+  - It's deeper on the right (130cm) and shallower on the left (58cm)
+  - The right end has a nice semicircular curve
+-->
+
+<g transform="translate(60, 60)">
+
+  <!-- Grid background -->
+  <rect x="-20" y="-20" width="940" height="440" fill="url(#majG)" stroke="#7BAAC4" stroke-width="1"/>
+  
+  <!-- Axis labels -->
+  <text x="0" y="-28" font-size="10" fill="#555" text-anchor="middle">0</text>
+  <text x="100" y="-28" font-size="10" fill="#555" text-anchor="middle">50</text>
+  <text x="200" y="-28" font-size="10" fill="#555" text-anchor="middle">100</text>
+  <text x="300" y="-28" font-size="10" fill="#555" text-anchor="middle">150</text>
+  <text x="400" y="-28" font-size="10" fill="#555" text-anchor="middle">200</text>
+  <text x="500" y="-28" font-size="10" fill="#555" text-anchor="middle">250</text>
+  <text x="600" y="-28" font-size="10" fill="#555" text-anchor="middle">300</text>
+  <text x="700" y="-28" font-size="10" fill="#555" text-anchor="middle">350</text>
+  <text x="800" y="-28" font-size="10" fill="#555" text-anchor="middle">400</text>
+  <text x="900" y="-28" font-size="10" fill="#555" text-anchor="middle">450</text>
+
+  <text x="-28" y="4" font-size="10" fill="#555" text-anchor="end">0</text>
+  <text x="-28" y="104" font-size="10" fill="#555" text-anchor="end">50</text>
+  <text x="-28" y="204" font-size="10" fill="#555" text-anchor="end">100</text>
+  <text x="-28" y="304" font-size="10" fill="#555" text-anchor="end">150</text>
+  <text x="-28" y="364" font-size="10" fill="#555" text-anchor="end">180</text>
+
+  <!-- ========== HOUSE ========== -->
+  <rect x="0" y="0" width="300" height="99" fill="#E8E8E8" stroke="#616161" stroke-width="2.5"/>
+  <line x1="15" y1="15" x2="285" y2="15" stroke="#BDBDBD" stroke-width="1.5"/>
+  <line x1="15" y1="35" x2="285" y2="35" stroke="#BDBDBD" stroke-width="1.5"/>
+  <line x1="15" y1="55" x2="285" y2="55" stroke="#BDBDBD" stroke-width="1.5"/>
+  <line x1="15" y1="75" x2="285" y2="75" stroke="#BDBDBD" stroke-width="1.5"/>
+  <text x="150" y="55" text-anchor="middle" font-size="20" font-weight="bold" fill="#424242">🏠 HOUSE</text>
+
+  <!-- ========== BED 1 — Narrow Strip ========== -->
+  <rect x="300" y="99" width="40" height="164" fill="rgba(255,183,77,0.35)" stroke="#E65100" stroke-width="2.5" rx="2"/>
+  <text x="320" y="188" text-anchor="middle" font-size="13" font-weight="bold" fill="#BF360C" transform="rotate(-90,320,188)">BED 1</text>
+
+  <!-- ========== BED 2 — Irregular shaped bed ========== -->
+  <!-- 
+    Top edge: straight from (340, 99) to (724, 99)
+    Right: semicircle from (724, 99) curving to (724, 359) 
+    Bottom: natural curved/angled line from (724, 359) back to (340, 215)
+    Left: straight from (340, 215) up to (340, 99)
+    
+    The bottom is NOT straight — it's a gentle curve tapering from deep (130cm) to shallow (58cm)
+  -->
+  <path d="
+    M 340,99
+    L 724,99
+    A 130,130 0 0,1 724,359
+    C 660,359 500,280 340,215
+    Z
+  " fill="rgba(129,199,132,0.3)" stroke="#2E7D32" stroke-width="2.5" stroke-linejoin="round"/>
+  
+  <text x="550" y="195" text-anchor="middle" font-size="16" font-weight="bold" fill="#1B5E20">BED 2</text>
+  <text x="550" y="215" text-anchor="middle" font-size="11" fill="#33691E" font-style="italic">(irregular shape — sides are angled, not straight)</text>
+
+  <!-- ========== DIMENSION LINES ========== -->
+  
+  <!-- House: 150 -->
+  <line x1="0" y1="118" x2="300" y2="118" stroke="#757575" stroke-width="1.2" marker-start="url(#gS)" marker-end="url(#gE)"/>
+  <text x="150" y="134" text-anchor="middle" font-size="14" font-weight="bold" fill="#757575">150</text>
+  
+  <!-- House: 49.5 -->
+  <line x1="-15" y1="0" x2="-15" y2="99" stroke="#757575" stroke-width="1.2" marker-start="url(#gS)" marker-end="url(#gE)"/>
+  <text x="-22" y="55" text-anchor="end" font-size="12" font-weight="bold" fill="#757575">49.5</text>
+  
+  <!-- Bed 1 width: 20 -->
+  <line x1="300" y1="278" x2="340" y2="278" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+  <text x="320" y="296" text-anchor="middle" font-size="14" font-weight="bold" fill="#C62828">20</text>
+
+  <!-- Bed 1 height: 82 -->
+  <line x1="285" y1="99" x2="285" y2="263" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+  <text x="272" y="185" text-anchor="end" font-size="14" font-weight="bold" fill="#C62828">82</text>
+
+  <!-- Bed 2 top: 128 (from bed 1 to the 64 section start) -->
+  <line x1="340" y1="80" x2="596" y2="80" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+  <text x="468" y="74" text-anchor="middle" font-size="15" font-weight="bold" fill="#C62828">128</text>
+
+  <!-- Bed 2 top right: 64 -->
+  <line x1="596" y1="80" x2="724" y2="80" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+  <text x="660" y="74" text-anchor="middle" font-size="15" font-weight="bold" fill="#C62828">64</text>
+  
+  <!-- 58 — depth at the LEFT side of bed 2 -->
+  <line x1="345" y1="99" x2="345" y2="215" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+  <text x="358" y="163" font-size="14" font-weight="bold" fill="#C62828">58</text>
+
+  <!-- 130 — depth at the RIGHT side (curve height) -->
+  <line x1="880" y1="99" x2="880" y2="359" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+  <text x="898" y="233" font-size="15" font-weight="bold" fill="#C62828">130</text>
+  <line x1="724" y1="99" x2="880" y2="99" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <line x1="724" y1="359" x2="880" y2="359" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+
+  <!-- 64 — width near the bottom/curve base -->
+  <line x1="596" y1="375" x2="724" y2="375" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+  <text x="660" y="393" text-anchor="middle" font-size="14" font-weight="bold" fill="#C62828">64</text>
+  <line x1="596" y1="355" x2="596" y2="375" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <line x1="724" y1="359" x2="724" y2="375" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+
+  <!-- ========== PLANTING DOTS ========== -->
+  
+  <!-- Bed 1 -->
+  <g fill="#FF8F00" opacity="0.5">
+    <circle cx="320" cy="125" r="4"/>
+    <circle cx="320" cy="160" r="4"/>
+    <circle cx="320" cy="195" r="4"/>
+    <circle cx="320" cy="230" r="4"/>
+  </g>
+  
+  <!-- Bed 2 — follow the irregular shape -->
+  <g fill="#43A047" opacity="0.4">
+    <!-- Row at depth ~15cm from top (y=129) — full width available -->
+    <circle cx="380" cy="129" r="4"/><circle cx="420" cy="129" r="4"/>
+    <circle cx="460" cy="129" r="4"/><circle cx="500" cy="129" r="4"/>
+    <circle cx="540" cy="129" r="4"/><circle cx="580" cy="129" r="4"/>
+    <circle cx="620" cy="129" r="4"/><circle cx="660" cy="129" r="4"/>
+    <circle cx="700" cy="129" r="4"/>
+    
+    <!-- Row at ~35cm (y=169) -->
+    <circle cx="380" cy="169" r="4"/><circle cx="420" cy="169" r="4"/>
+    <circle cx="460" cy="169" r="4"/><circle cx="500" cy="169" r="4"/>
+    <circle cx="540" cy="169" r="4"/><circle cx="580" cy="169" r="4"/>
+    <circle cx="620" cy="169" r="4"/><circle cx="660" cy="169" r="4"/>
+    <circle cx="700" cy="169" r="4"/><circle cx="740" cy="169" r="4"/>
+    <circle cx="775" cy="169" r="4"/>
+    
+    <!-- Row at ~55cm (y=209) — left side near edge -->
+    <circle cx="420" cy="209" r="4"/>
+    <circle cx="460" cy="209" r="4"/><circle cx="500" cy="209" r="4"/>
+    <circle cx="540" cy="209" r="4"/><circle cx="580" cy="209" r="4"/>
+    <circle cx="620" cy="209" r="4"/><circle cx="660" cy="209" r="4"/>
+    <circle cx="700" cy="209" r="4"/><circle cx="740" cy="209" r="4"/>
+    <circle cx="780" cy="209" r="4"/><circle cx="810" cy="209" r="4"/>
+    
+    <!-- Row at ~75cm (y=249) — only right portion -->
+    <circle cx="540" cy="249" r="4"/>
+    <circle cx="580" cy="249" r="4"/><circle cx="620" cy="249" r="4"/>
+    <circle cx="660" cy="249" r="4"/><circle cx="700" cy="249" r="4"/>
+    <circle cx="740" cy="249" r="4"/><circle cx="780" cy="249" r="4"/>
+    <circle cx="810" cy="249" r="4"/><circle cx="840" cy="249" r="4"/>
+    
+    <!-- Row at ~95cm (y=289) — narrower, deeper right side -->
+    <circle cx="640" cy="289" r="4"/><circle cx="680" cy="289" r="4"/>
+    <circle cx="720" cy="289" r="4"/><circle cx="755" cy="289" r="4"/>
+    <circle cx="785" cy="289" r="4"/><circle cx="810" cy="289" r="4"/>
+    
+    <!-- Row at ~115cm (y=329) — near bottom curve -->
+    <circle cx="700" cy="329" r="4"/><circle cx="735" cy="329" r="4"/>
+    <circle cx="765" cy="329" r="4"/>
+  </g>
+
+  <!-- Depth reference lines (dashed) to show how bed tapers -->
+  <line x1="340" y1="215" x2="340" y2="223" stroke="#2E7D32" stroke-width="1.5"/>
+  <line x1="340" y1="215" x2="355" y2="215" stroke="#2E7D32" stroke-width="1.5"/>
+  
+</g>
+
+<!-- Legend -->
+<g transform="translate(60, 510)">
+  <text x="0" y="0" font-size="18" font-weight="bold" fill="#333">Legend</text>
+  
+  <rect x="0" y="15" width="22" height="16" fill="#E8E8E8" stroke="#616161" stroke-width="1.5"/>
+  <text x="32" y="28" font-size="13" fill="#444">House (150 × 49.5 cm)</text>
+  
+  <rect x="0" y="42" width="22" height="16" fill="rgba(255,183,77,0.35)" stroke="#E65100" stroke-width="1.5"/>
+  <text x="32" y="55" font-size="13" fill="#444">Bed 1 — Narrow strip along house wall (20 × 82 cm)</text>
+  
+  <path d="M0,75 Q11,70 22,75 Q11,88 0,83 Z" fill="rgba(129,199,132,0.3)" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="32" y="82" font-size="13" fill="#444">Bed 2 — Main bed (irregular shape, angled/curved sides)</text>
+  
+  <circle cx="11" cy="102" r="5" fill="#43A047" opacity="0.5"/>
+  <text x="32" y="106" font-size="13" fill="#444">Suggested planting spots (~20 cm apart)</text>
+
+  <text x="0" y="142" font-size="14" fill="#333" font-weight="bold">Bed 2 Key Dimensions:</text>
+  <text x="0" y="162" font-size="13" fill="#444">• Top edge (along house): <tspan font-weight="bold">128 + 64 = 192 cm</tspan> wide</text>
+  <text x="0" y="182" font-size="13" fill="#444">• Left depth (near house corner): <tspan font-weight="bold">58 cm</tspan></text>
+  <text x="0" y="202" font-size="13" fill="#444">• Right depth (at curved end): <tspan font-weight="bold">130 cm</tspan></text>
+  <text x="0" y="222" font-size="13" fill="#444">• Bottom edge tapers from 58cm to 130cm depth — sides are angled, not squared off</text>
+  <text x="0" y="242" font-size="13" fill="#444">• Right end: semicircular curve, 64 cm wide at base</text>
+  
+  <text x="0" y="278" font-size="14" fill="#333" font-weight="bold">Estimated Areas:</text>
+  <text x="0" y="298" font-size="13" fill="#444">Bed 1: 20 × 82 = <tspan font-weight="bold">1,640 cm²</tspan> (0.16 m²)</text>
+  <text x="0" y="318" font-size="13" fill="#444">Bed 2: approx. <tspan font-weight="bold">18,000–20,000 cm²</tspan> (≈ 1.9 m² / ~20 ft²)</text>
+  <text x="0" y="343" font-size="14" fill="#333" font-weight="bold">Combined total: ≈ 2.1 m² (≈ 22 ft²)</text>
+  
+  <text x="0" y="380" font-size="13" fill="#666" font-style="italic">1 grid square = 10 × 10 cm. Red dimensions from your sketch. Bottom edge is approximate.</text>
+</g>
+
+</svg>
+</body>
+</html>

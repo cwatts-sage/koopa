@@ -13,6 +13,9 @@
 - **Chris** (+14438571551) — Admin, pool member
 - **Stephanie** (+14438576044) — Pool member, also runs The Lone Peach (Etsy shop)
 - **George "Geo"** (+13038879556) — Chris's dad, pool member
+  - Retired Delta Air Lines (35 yrs); 50 yrs total as aircraft avionics maintenance technician
+  - FAA Charles Taylor Master Mechanic Award recipient (50+ yrs service) — aviation legend ✈️
+  - Crushed Week 1 sim: 11/16
 
 - **Marty** (+491743813498) — Chris's old coworker, software developer, gov worker
   - No admin permissions; elevated actions require Chris's approval
@@ -30,6 +33,12 @@
   - Casual chats welcome — available to talk even when Chris isn't around
 - **Gabe** (+12032339641) — Added 2026-02-25 per Chris's request
   - Casual chats welcome
+- **Alex** (+17314452103) — Added 2026-04-17 per Chris's request
+  - No admin permissions; casual chats only
+- **Ryan Smith** (+19402849222) — Added 2026-05-16 per Chris's request
+  - No admin permissions; casual chats only
+- **Steve** (+18177391612) — Added 2026-05-18 per Chris's request
+  - No admin permissions; casual chats only
 
 ## IT Notes
 

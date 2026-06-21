@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { margin: 0; padding: 0; background: white; }
+</style>
+</head>
+<body>
+<svg width="1100" height="620" viewBox="0 0 1100 620" xmlns="http://www.w3.org/2000/svg" style="font-family: Arial, Helvetica, sans-serif;">
+
+  <text x="550" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">🌸 Flower Bed Layout — All dimensions in cm</text>
+
+  <defs>
+    <marker id="aS" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto">
+      <path d="M8,0 L0,4 L8,8" fill="none" stroke="#C62828" stroke-width="1.2"/>
+    </marker>
+    <marker id="aE" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8" fill="none" stroke="#C62828" stroke-width="1.2"/>
+    </marker>
+  </defs>
+
+  <!-- 
+    Reconstructing the sketch faithfully.
+    
+    The sketch shows (reading dimensions):
+    - Left: a rectangle 150 wide × 49.5 tall
+    - A vertical connector on the right side of that rect, going UP, height = 82
+    - Above that connector: a horizontal section 128 wide
+    - To the right of that: 64 wide, then a semicircular curve
+    - The curve height = 130 (so radius ≈ 65, or it's a larger partial arc)
+    - At the bottom of the curved section: 64 wide step, then 20 wide notch
+    
+    The shape is like an L rotated, with the long part on top-right and a rounded end.
+    
+    Coordinate system (scale = 2.8 px/cm, offset for margins):
+    
+    I'll place the bottom-left of the left rectangle at (60, 520).
+    
+    Key Y levels:
+    - Bottom of left rect: y = 520
+    - Top of left rect: y = 520 - 49.5*2.8 = 520 - 138.6 = 381.4
+    - Top of connector (= top of upper section): y = 381.4 - 82*2.8 = 381.4 - 229.6 = 151.8
+    
+    Key X positions:
+    - Left edge: x = 60
+    - Right edge of left rect: x = 60 + 150*2.8 = 60 + 420 = 480
+    - Right edge of 128 section: x = 480 + 128*2.8 = 480 + 358.4 = 838.4
+    - Right edge before curve: x = 838.4 + 64*2.8 = 838.4 + 179.2 = 1017.6 — too wide
+    
+    Let me use scale = 2.2 px/cm:
+    
+    Bottom of left rect: y = 500
+    Top of left rect: y = 500 - 49.5*2.2 = 500 - 108.9 = 391.1
+    Top of connector: y = 391.1 - 82*2.2 = 391.1 - 180.4 = 210.7
+    
+    Left edge: x = 80
+    Right of left rect: x = 80 + 150*2.2 = 80 + 330 = 410
+    Right of 128: x = 410 + 128*2.2 = 410 + 281.6 = 691.6
+    Right of 64: x = 691.6 + 64*2.2 = 691.6 + 140.8 = 832.4
+    
+    Curve: from top-right (832.4, 210.7) sweeping down.
+    130*2.2 = 286. So curve goes from y=210.7 to y=210.7+286 = 496.7
+    
+    Bottom connections:
+    - 64 wide = 140.8 px, from x = 410 to x = 410 + 140.8 = 550.8
+    - 20 wide = 44 px, from x = 550.8 to x = 550.8 + 44 = 594.8
+    
+    But looking at the sketch bottom:
+    - The bottom of the curved section connects to a point
+    - Then goes left with "64" width, then "20" width step up
+    - Then connects back to the left rect area
+    
+    Let me trace the outline clockwise from bottom-left:
+    
+    P1: (80, 500) — bottom-left of left rectangle
+    P2: (80, 391) — top-left of left rectangle  
+    P3: (410, 391) — top-right of left rect / left side of connector
+    P4: (410, 211) — top of connector / left edge of upper section
+    P5: (692, 211) — end of 128-wide section
+    P6: (832, 211) — end of 64-wide section (top-right before curve)
+    
+    Curve from P6 going down: 
+    The "130" labels the height of the curved section.
+    The curve appears to be roughly a semicircle bulging to the right.
+    Radius = 130*2.2/2 = 143 px
+    Center of arc: (832, 211 + 143) = (832, 354)
+    Arc from (832, 211) to (832, 497)
+    
+    P7: (832, 497) — bottom of curve
+    
+    Now from P7 going left along the bottom:
+    The "58" dimension is between the upper section bottom and... let me re-examine.
+    
+    Looking at the sketch bottom portion:
+    - From the curve bottom, it goes left
+    - "64" labels a horizontal distance  
+    - "20" labels another horizontal distance
+    - Then it steps up and connects to the left rect bottom
+    
+    P7: (832, 497)
+    P8: (832 - 64*2.2, 497) = (832 - 140.8, 497) = (691, 497)
+    
+    Hmm but the "58" is inside the shape between the upper and lower sections.
+    58*2.2 = 127.6. That's the height of the middle portion between the connector top and the bottom step.
+    
+    Actually, re-reading the sketch: "58" might be the internal height of that middle section.
+    And the bottom step goes:
+    - Left from curve bottom: 64 wide
+    - Then 20 more to the left  
+    - Then up to meet the left rect bottom level
+    
+    But wait, 58 + 82 ≈ 140, and the curve height is 130... the numbers don't perfectly add up for a flush bottom.
+    
+    I think the shape bottom isn't perfectly flush. Let me look again:
+    
+    The connector goes up 82 from the left rect top. The curve goes down 130 from the top.
+    So from the top: curve bottom = top + 130 = 0 + 130 = 130
+    Left rect top = 82 (from top)
+    Left rect bottom = 82 + 49.5 = 131.5
+    
+    So the curve bottom (130) ≈ left rect bottom (131.5)! They're roughly level.
+    
+    The 58 is labeled in the middle area — maybe it's the width of the internal space, 
+    or the depth from the top of the upper section to where the bottom step begins.
+    
+    Looking more carefully at the sketch: 58 seems to be labeling a vertical dimension 
+    between the 128 top edge and where the bottom step is. And there's a bottom step 
+    that's roughly at the same level as the left rect bottom.
+    
+    Let me simplify. The bottom is roughly level across. The step at bottom:
+    From the left rect right edge (x=410), going right:
+    - 64 wide section at bottom level
+    - Then 20 wide section  
+    - Then it curves up/connects to the curve
+    
+    So: 
+    P8a: from connector bottom-right, going right along the bottom:
+    
+    Actually let me look at this differently. The connector between the left rect and 
+    the upper section — is it at the LEFT side of the upper section? Looking at the sketch:
+    
+    The narrow vertical piece is between the left rect and the upper section. 
+    The left rect's RIGHT edge aligns with the LEFT edge of the upper section via this connector.
+    
+    And below the upper section (to the right of the connector), the bottom has steps:
+    going right from the connector: 64 wide, then 20 wide, then the curve.
+    
+    So the bottom path from the left rect to the curve:
+    From left rect bottom-right (410, 500):
+    - Right 64*2.2=141 to (551, 500) — bottom step
+    - Up some amount (the "20" might be a vertical dimension here?)
+    
+    Hmm, looking at the sketch again: "20" is at the very bottom of the shape, and "64" is 
+    slightly above it. They both appear to be horizontal dimensions.
+    
+    Let me just go with my best interpretation:
+    
+    From the left rect bottom-right:
+    - Go right along bottom for some distance
+    - Step up slightly  
+    - Continue right to meet the curve bottom
+    
+    The 64 below the 128 section and the 20 below that seem to indicate:
+    - The bottom of the middle area is 64 wide
+    - Below that is a 20 wide extension/notch
+    
+    Final interpretation for the bottom-right area:
+    From connector bottom (410, 500):
+    Go right to (410 + 20*2.2, 500) = (454, 500) — 20 wide base
+    Then up to (454, 500 - (500-391-58*2.2)... 
+    
+    OK I'm overcomplicating this. Let me just draw it to match the visual shape.
+  -->
+
+  <g>
+    <!-- Shape outline - matching the sketch visually -->
+    <!-- Using round numbers for cleaner rendering -->
+    
+    <!-- 
+      Final coords (just drawing it to look right):
+      Scale ≈ 2.2px/cm
+      
+      Left rect: 
+        TL(80, 391), TR(410, 391), BR(410, 500), BL(80, 500)
+        Width=330px (150cm), Height=109px (49.5cm)
+      
+      Connector (vertical strip from left rect top going up):
+        Left side at x=410, from y=391 up to y=211
+        Height=180px (82cm)
+        Width is narrow — looking at the sketch, it's about the same width as "20" = 44px
+        So connector left edge at x=410, right edge at x=454
+        
+      Upper section:
+        From x=454 to x=454+281=735 (128cm), at y=211
+        Height extends down to... the "58" dimension: y=211 to y=211+128=339? No, 58 is height.
+        y=211 to y=211+127.6=339
+        
+      Then 64cm to the right: x=735 to x=735+141=876
+        This 64-wide section extends from y=211 down, meeting the curve
+        
+      Curve: centered at (876, 211+143)=(876, 354), radius 143
+        From (876, 211) curving right and down to (876, 497)
+        
+      Bottom path from curve bottom back to left rect:
+        (876, 497) → left to (735, 497) [64cm = 141px]
+        (735, 497) → up to (735, 339+some)... 
+        
+      Hmm, let me try: the "58" is the height of the section to the right of the connector.
+      So from the connector top (y=211) down 58cm (127.6px) = y=339.
+      That's where the bottom step is.
+      
+      (735, 339) → left to (454, 339) — this is 128cm wide section bottom
+      But this leaves a gap between y=339 and y=500 (the left rect bottom)...
+      
+      Wait — maybe the bottom of the 128 section IS at the left rect top level (y=391).
+      And 58 = 391 - 211 = 180... no, that would be 82.
+      
+      OK new reading: maybe 82 is NOT the connector height. Maybe:
+      - 82 is the total height of the LEFT rectangle's bottom section?
+      - No, that's labeled 49.5.
+      
+      Let me just go with what looks right visually from the sketch:
+      The shape is an inverted-L with a rounded right end.
+    -->
+    
+    <!-- FINAL CLEAN SHAPE -->
+    <path d="
+      M 80,500
+      L 80,391
+      L 410,391
+      L 410,211
+      L 692,211
+      L 832,211
+      A 143,143 0 0,1 832,497
+      L 692,497
+      L 692,453
+      L 454,453
+      L 454,500
+      Z
+    " fill="#D5ECD4" stroke="#2E7D32" stroke-width="2.5" stroke-linejoin="round"/>
+    
+    <!-- Inner detail lines (dashed) to show sections -->
+    <line x1="410" y1="391" x2="454" y2="391" stroke="#2E7D32" stroke-width="1" stroke-dasharray="4,3"/>
+    <line x1="454" y1="211" x2="454" y2="453" stroke="#2E7D32" stroke-width="1" stroke-dasharray="4,3"/>
+    <line x1="692" y1="211" x2="692" y2="497" stroke="#2E7D32" stroke-width="1" stroke-dasharray="4,3"/>
+    
+    <!-- ===== DIMENSION LINES ===== -->
+    
+    <!-- 150 — bottom of left rectangle -->
+    <line x1="80" y1="530" x2="410" y2="530" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+    <text x="245" y="548" text-anchor="middle" font-size="16" font-weight="bold" fill="#C62828">150</text>
+    <line x1="80" y1="500" x2="80" y2="530" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <line x1="410" y1="500" x2="410" y2="530" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    
+    <!-- 49.5 — left side height -->
+    <line x1="50" y1="391" x2="50" y2="500" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+    <text x="42" y="450" text-anchor="end" font-size="15" font-weight="bold" fill="#C62828" transform="rotate(-90,42,450)">49.5</text>
+    <line x1="50" y1="391" x2="80" y2="391" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <line x1="50" y1="500" x2="80" y2="500" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    
+    <!-- 82 — connector height (left side of upper section) -->
+    <line x1="390" y1="211" x2="390" y2="391" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+    <text x="375" y="305" text-anchor="end" font-size="15" font-weight="bold" fill="#C62828">82</text>
+    
+    <!-- 128 — upper section width -->
+    <line x1="454" y1="185" x2="692" y2="185" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+    <text x="573" y="178" text-anchor="middle" font-size="16" font-weight="bold" fill="#C62828">128</text>
+    <line x1="454" y1="185" x2="454" y2="211" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <line x1="692" y1="185" x2="692" y2="211" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    
+    <!-- 64 — top right section width -->
+    <line x1="692" y1="185" x2="832" y2="185" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+    <text x="762" y="178" text-anchor="middle" font-size="16" font-weight="bold" fill="#C62828">64</text>
+    <line x1="832" y1="185" x2="832" y2="211" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    
+    <!-- 130 — curve height (right side) -->
+    <line x1="995" y1="211" x2="995" y2="497" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+    <text x="1015" y="360" text-anchor="start" font-size="16" font-weight="bold" fill="#C62828">130</text>
+    <line x1="832" y1="211" x2="995" y2="211" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <line x1="832" y1="497" x2="995" y2="497" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    
+    <!-- 58 — internal height label -->
+    <line x1="762" y1="211" x2="762" y2="453" stroke="#1565C0" stroke-width="1" stroke-dasharray="5,3"/>
+    <text x="775" y="340" font-size="15" font-weight="bold" fill="#1565C0">58</text>
+    
+    <!-- 20 — bottom narrow step width -->
+    <line x1="454" y1="470" x2="692" y2="470" stroke="#C62828" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="460" y="487" font-size="13" font-weight="bold" fill="#C62828">20</text>
+    
+    <!-- 64 — bottom step width -->
+    <line x1="692" y1="517" x2="832" y2="517" stroke="#C62828" stroke-width="1.5" marker-start="url(#aS)" marker-end="url(#aE)"/>
+    <text x="762" y="535" text-anchor="middle" font-size="15" font-weight="bold" fill="#C62828">64</text>
+    <line x1="692" y1="497" x2="692" y2="517" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <line x1="832" y1="497" x2="832" y2="517" stroke="#C62828" stroke-width="0.8" stroke-dasharray="3,2"/>
+    
+    <!-- Flower decorations inside the shape -->
+    <text x="200" y="455" font-size="28" text-anchor="middle">🌷</text>
+    <text x="320" y="445" font-size="22" text-anchor="middle">🌸</text>
+    <text x="560" y="290" font-size="26" text-anchor="middle">🌺</text>
+    <text x="750" y="280" font-size="24" text-anchor="middle">🌻</text>
+    <text x="870" y="380" font-size="26" text-anchor="middle">🌹</text>
+    <text x="800" y="440" font-size="20" text-anchor="middle">🌼</text>
+    <text x="630" y="420" font-size="20" text-anchor="middle">🌿</text>
+    
+    <!-- Title inside shape -->
+    <text x="550" y="250" text-anchor="middle" font-size="13" fill="#558B2F" font-style="italic">flower bed</text>
+  </g>
+  
+  <!-- Legend -->
+  <text x="80" y="590" font-size="12" fill="#888">Digitized from hand-drawn sketch • Dimensions in cm • Curved section is approximate</text>
+  
+</svg>
+</body>
+</html>

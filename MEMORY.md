@@ -23,13 +23,30 @@
 - **Week 1 scored:** Geo 11/16, Chris 5/16, Stephanie 5/16
 - **Key gotcha:** Azure SWA hijacks Authorization header — use X-Wfp-Token instead
 
-## Message Delivery — CRITICAL BEHAVIOR RULES (set 2026-02-26)
+## Message Delivery — CRITICAL BEHAVIOR RULES (updated 2026-05-30)
 - **ALWAYS use the `message` tool (proactive delivery)** for replies
 - Do NOT rely on turn-context (inline) replies — they fail on long turns (30+ sec)
 - Use `NO_REPLY` after sending via `message` tool to prevent duplicates
-- Channel: use whichever channel the inbound message came from (bluebubbles or whatsapp)
+- Channel: use whichever channel the inbound message came from (**imessage** or whatsapp)
 - Target: use sender phone number from inbound metadata (e.g. `+14438571551` for Chris)
 - Details in TOOLS.md "Message Delivery" section
+
+## iMessage Migration (BlueBubbles REMOVED) — 2026-05-30
+- **BlueBubbles support was REMOVED from OpenClaw** (confirmed in v2026.5.27 docs)
+- **Now using native `imsg` bridge** via `@openclaw/imessage` plugin (enabled)
+- **imsg CLI:** `/opt/homebrew/bin/imsg` v0.10.0 (installed via `brew install steipete/tap/imsg`)
+- **Private API bridge:** LIVE — `imsg launch` injected dylib into Messages.app; `advanced_features: true` (reactions, replies, edits, effects, group mgmt all work)
+- **SIP is disabled** on this Mac (required for imsg launch / private API)
+- **Channel config:** `channels.imessage` — dmPolicy=allowlist, groupPolicy=allowlist
+  - cliPath: `/opt/homebrew/bin/imsg`, dbPath: `/Users/kingkoopa/Library/Messages/chat.db`
+  - allowFrom: all pool members + contacts (Chris, Steph, Geo, Marty, McKenzie, Jim, Ralph, Martin, Gabe, Alex, Ryan, Steve)
+  - actions enabled: reactions, edit, unsend, reply, sendWithEffect, sendAttachment
+  - group actions (rename/icon/add/remove/leave) DISABLED for safety
+- **imsg chat IDs:** Chris=2, Geo=3038879556→id12, Ryan=11, Steve=13, group=3
+- **Watts Football Pool group:** chat id 3, guid `any;+;7a86bd1e528944bf935389d6536d1e19`
+  - **groupAllowFrom is EMPTY (group dormant)** — per Chris's standing decision to keep football group off until he re-enables (was removed for unwanted responses 2026-02-27)
+- **iMessage group target format for sends:** `any;+;7a86bd1e528944bf935389d6536d1e19` (NOT the old `chat_guid:any;+;` bluebubbles format)
+- **Restart method that works:** `launchctl kickstart -k gui/501/ai.openclaw.gateway` (atomic; `openclaw gateway restart` fails with 'port still busy' when run from inside the gateway)
 
 ## Technical Notes
 - `imsg send` requires Automation permission (AppleEvents) for node → Messages.app
@@ -75,6 +92,41 @@
 - **Status:** Phase 1 complete — waiting on Chris to install Foundry VTT on this Mac
 - **Full status & plan:** `projects/dnd/STATUS.md`
 - **GitHub backup:** github.com/cwatts-sage/koopa.git (deploy key at ~/.ssh/kingkoopa-deploy)
+
+## Model Provider Setup (Ask Sage) — updated 2026-05-30
+- **Default:** `asksage-anthropic/google-claude-48-opus` (Claude Opus 4.8, 1M ctx, reasoning ON)
+- **Fallbacks:** Claude Opus 4.7 → Claude 4.6 Sonnet → Gemini 2.5 Pro
+- **Three providers registered** per latest Ask Sage docs (docs.asksage.ai/docs/v2/integrations/openclaw.html):
+  - `asksage-anthropic` → Claude Opus 4.8, Claude Opus 4.7, Claude 4.6 Sonnet
+  - `asksage-openai` → GPT 4.1, O3 Mini
+  - `asksage-google` → Gemini 2.5 Pro, Gemini 2.5 Flash
+- **Note:** Opus 4.8 not yet in official docs but available via Ask Sage (model ID `google-claude-48-opus`)
+- **One API key** powers all three (stored in openclaw.json)
+- **Migration notes:**
+  - Old provider `custom-api-asksage-ai` removed (had only Opus 4.6 at 200K ctx)
+  - `openclaw onboard` CLI only supports `--custom-compatibility openai|anthropic` (no google yet) — use `openclaw config patch` for Google/Gemini provider
+  - `openclaw config patch` and `openclaw config unset` bypass the agent-side protected-paths safety guard (they use the trusted writer path)
+  - Switch models via: `openclaw models set <provider>/<model-id>`
+  - Manage fallbacks: `openclaw models fallbacks add|remove|list|clear`
+
+## Image Generation in iMessage (PENDING Ask Sage Nano Banana launch) — 2026-05-30
+- **Chris is Director of Engineering at Ask Sage.** Monday (2026-06-01) Ask Sage releases new GCP image models: **Nano Banana** and **Nano Banana Pro**.
+- **Goal:** Let Koopa Troop users request images in iMessage chats ("make me X") and get them delivered as native iMessage attachments.
+- **OpenClaw side is READY (verified 2026-05-30):**
+  - `image_generate` tool is built-in, auto-enables when an image provider is configured
+  - Async pipeline: agent requests → background task → completion sends image via `message` tool → lands as iMessage attachment
+  - iMessage channel already has `sendAttachment: true` enabled ✅
+  - OpenClaw docs already reference "Nano Banana 2 edits (up to 14 ref images)" via fal provider — lineage known
+- **Integration paths (TBD which Ask Sage uses):**
+  - Path A (cleanest): Ask Sage as Google-native image provider — `google/<model>` with `models.providers.google.baseUrl` → Ask Sage google endpoint, `:generateContent` w/ responseModalities IMAGE, or `:predict`
+  - Path B: Ask Sage OpenAI-compatible `/images/generations` (DALL-E style) → point openai image provider baseUrl at Ask Sage
+- **TEST RESULT 2026-05-30:** Calling existing `google-gemini-2.5-flash-image` via Ask Sage `/server/google/v1beta/...:generateContent` returned TEXT describing the image, not an actual image. So image output needs correct model ID + response modality flag — exact contract TBD.
+- **4 OPEN QUESTIONS for Chris/Ask Sage source-code bot:**
+  1. Exact model IDs for Nano Banana / Nano Banana Pro?
+  2. Endpoint shape: Google `:generateContent` (responseModalities IMAGE)? `:predict` (Imagen-style)? or OpenAI `/images/generations`?
+  3. Same base URL (`api.asksage.ai/server/google/v1beta`) or new image path?
+  4. Same API key or separate image quota/credential?
+- **Status: WAITING on Chris** — he's checking with his team / a bot with direct Ask Sage source access. Once answers arrive: register image model, set imageGenerationModel.primary=Nano Banana Pro (fallback Nano Banana), restart, test end-to-end to Chris's iMessage.
 
 ## Origin
 - Created 2026-02-23 by Toadstool 🍄 (sister instance) on behalf of Chris

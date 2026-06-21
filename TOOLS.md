@@ -18,8 +18,15 @@ After sending via `message` tool, respond with ONLY: `NO_REPLY`
 
 **Channel selection:**
 - Use whichever channel the inbound message came from (check inbound metadata)
-- BlueBubbles: `channel="bluebubbles"`
+- iMessage: `channel="imessage"` (native imsg bridge — BlueBubbles REMOVED 2026-05-30)
 - WhatsApp: `channel="whatsapp"`
+
+**iMessage (imsg) notes:**
+- Backend: `/opt/homebrew/bin/imsg` v0.10.0 (steipete/tap/imsg)
+- Direct CLI send (fallback/testing): `imsg send --chat-id <id> --text "..."`
+- Group send target format: `any;+;7a86bd1e528944bf935389d6536d1e19` (NOT old bluebubbles `chat_guid:` prefix)
+- Private API (reactions/replies/effects) requires `imsg launch` (dylib injection; SIP disabled). Re-run `imsg launch` if Messages.app restarts.
+- Restart gateway with: `launchctl kickstart -k gui/501/ai.openclaw.gateway` (NOT `openclaw gateway restart` — fails port-busy from inside)
 
 **Formatting Tips:**
 - iMessage: Standard markdown works, keep messages under 10,000 chars
