@@ -48,6 +48,16 @@
 - **iMessage group target format for sends:** `any;+;7a86bd1e528944bf935389d6536d1e19` (NOT the old `chat_guid:any;+;` bluebubbles format)
 - **Restart method that works:** `launchctl kickstart -k gui/501/ai.openclaw.gateway` (atomic; `openclaw gateway restart` fails with 'port still busy' when run from inside the gateway)
 
+## Upgrade Playbook (learned 2026-08-26)
+- **Backup first:** commit+push workspace (`cwatts-sage/koopa`) AND the nfl webapp submodule (`cwatts-sage/NFL`, uses ssh alias `github.com-nfl`); snapshot config to `~/.openclaw/backups/openclaw.json.<ts>`
+- **⚠️ NODE ENGINE GATE:** new OpenClaw versions hard-block (not warn) on old Node. 2026.7.1-2 required Node >=22.22.3; we were on 22.22.0 and `openclaw` refused to run at all after npm install.
+  - **Fix:** `brew upgrade node@22` (kept us on the 22.x line — no need to jump to node@24 / repoint the LaunchAgent). Went 22.22.0_1 → 22.23.2_1.
+  - node@22 is keg-only; binary lives at `/opt/homebrew/opt/node@22/bin/node` and the LaunchAgent points there.
+  - Check BEFORE restarting the gateway — the running gateway keeps the old code in memory, so a bad restart is what actually kills you.
+- **Restart:** `launchctl kickstart -k gui/501/ai.openclaw.gateway`
+  - This restarts the gateway you're running inside, so the exec tool result is usually LOST ("missing tool result" synthetic error). That's expected — just re-check `openclaw gateway status` in a fresh call instead of assuming failure.
+- **Verify:** `openclaw gateway status` (version + pid + probe ok) and `openclaw models list`
+
 ## Technical Notes
 - `imsg send` requires Automation permission (AppleEvents) for node → Messages.app
 - If sending hangs, check TCC.db or run `tccutil reset AppleEvents`
@@ -93,9 +103,14 @@
 - **Full status & plan:** `projects/dnd/STATUS.md`
 - **GitHub backup:** github.com/cwatts-sage/koopa.git (deploy key at ~/.ssh/kingkoopa-deploy)
 
-## Model Provider Setup (Ask Sage) — updated 2026-05-30
-- **Default:** `asksage-anthropic/google-claude-48-opus` (Claude Opus 4.8, 1M ctx, reasoning ON)
-- **Fallbacks:** Claude Opus 4.7 → Claude 4.6 Sonnet → Gemini 2.5 Pro
+## Model Provider Setup (Ask Sage) — updated 2026-08-26
+- **Default:** `asksage-anthropic/google-claude-opus-5` (**Claude Opus 5**, 1M ctx, reasoning ON) ⬅️ upgraded 2026-08-26
+- **Fallbacks:** Opus 4.8 → Sonnet 5 → Claude 4.6 Sonnet → Gemini 2.5 Pro
+- **Verified working 2026-08-26** via `POST https://api.asksage.ai/server/anthropic/v1/messages` with header `x-api-key`, body `{"model":"google-claude-opus-5",...}` — returned text + a `thinking` block (reasoning confirmed)
+- **New Claude 5 family IDs on Ask Sage:** `google-claude-opus-5`, `google-claude-sonnet-5`, `google-claude-fable-5`
+- **🔑 How to discover live Ask Sage model IDs:**
+  `curl -s -X POST https://api.asksage.ai/server/get-models -H "x-access-tokens: $KEY" -H "Content-Type: application/json" -d '{}'`
+  (94 models as of 2026-08-26; also lists gemini-3 family + image models)
 - **Three providers registered** per latest Ask Sage docs (docs.asksage.ai/docs/v2/integrations/openclaw.html):
   - `asksage-anthropic` → Claude Opus 4.8, Claude Opus 4.7, Claude 4.6 Sonnet
   - `asksage-openai` → GPT 4.1, O3 Mini
