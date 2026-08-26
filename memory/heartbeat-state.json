@@ -1,0 +1,10 @@
+{
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "weather": null,
+    "saddle_watch": 1750593360,
+    "systems_check": 1750573500
+  },
+  "notes": "web_search has NO provider configured (verified 2026-06-22 vs pre-update backup -- NOT an update regression, never configured). Saddle watch for Ryan is blocked until Chris adds a search provider (Brave/Perplexity/Tavily). Flagged to Chris 2026-06-22 morning."
+}
