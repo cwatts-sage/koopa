@@ -21,6 +21,11 @@
   - No admin permissions; elevated actions require Chris's approval
   - OHaaS pitch target — Chris can provide pilot access
 
+- **Marion Box** (+18173130383) — Pool member
+  - Registered in the NFL Pick 'Em web app 2026-05-15; confirmed legit by Chris 2026-08-29
+  - No admin permissions
+  - Fort Worth, TX area code (817) — possible connection to Steve (+18177391612), unconfirmed
+
 ## Family / Contacts
 
 - **McKenzie** (+14438577608) — Chris's daughter
