@@ -3,8 +3,9 @@
     "email": null,
     "calendar": null,
     "weather": null,
-    "saddle_watch": 1750593360,
-    "systems_check": 1750573500
+    "saddle_watch": 1756456800,
+    "systems_check": 1756454160,
+    "imsg_watchdog": 1756454160
   },
-  "notes": "web_search has NO provider configured (verified 2026-06-22 vs pre-update backup -- NOT an update regression, never configured). Saddle watch for Ryan is blocked until Chris adds a search provider (Brave/Perplexity/Tavily). Flagged to Chris 2026-06-22 morning."
+  "notes": "SADDLE WATCH UNBLOCKED 2026-08-29: built scripts/saddle-watch.sh which crawls RanchWorldAds Saddles cat_id=12 newest-first and greps titles. web_search still has NO provider (not an update regression, never configured) and eBay 403s web_fetch, but RanchWorldAds crawl works fine via curl. First real sweep: 645 listings, 0 Donahoe/Donaho/Barton matches. | imsg watchdog 2026-08-29: PASS -- v0.14.2, SIP disabled, IMCore bridge v2 connected. | WhatsApp channel = 'not linked' since at least 2026-08-28, needs QR relink from Chris (OPEN ITEM). | Gateway 2026.7.1-2, default model Claude Opus 5, all healthy."
 }
