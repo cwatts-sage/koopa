@@ -3,9 +3,9 @@
     "email": null,
     "calendar": null,
     "weather": null,
-    "saddle_watch": 1756456800,
-    "systems_check": 1756545960,
-    "imsg_watchdog": 1756545960
+    "saddle_watch": 1788160000,
+    "systems_check": 1788160000,
+    "imsg_watchdog": 1788160000
   },
-  "notes": "2026-08-30 05:26 watchdog: PASS -- imsg v0.14.2, IMCore bridge v2 connected; gateway 2026.7.1-2 pid 65002 healthy. | AWAITING CHRIS -- 2 items flagged 2026-08-29, no reply yet. DO NOT re-ping, he has the info: (1) flip WFP_TEST_MODE=false in prod, (2) rally Troop to re-register (users table = 0 rows, accounts unrecoverable). Draft message ready w/ 3 options at projects/nfl-agent/draft-reregistration-message.md. Week 1 opener Wed 2026-09-09 8:20PM ET Patriots@Seahawks. | Pool app itself VERIFIED HEALTHY 2026-08-29 (register/login/picks all 200/201, test acct cleaned from all 3 tables). | SADDLE WATCH UNBLOCKED: scripts/saddle-watch.sh crawls RanchWorldAds cat_id=12 newest-first. web_search has NO provider (never configured); eBay 403s web_fetch. Last sweep 645 listings, 0 matches. Due again ~2026-09-01. | WhatsApp channel = 'not linked' since 2026-08-28, needs QR relink from Chris (OPEN ITEM)."
+  "notes": "2026-08-30 quiet-hours sweep: imsg watchdog PASS (v0.14.2, IMCore bridge v2 connected). Gateway 2026.7.1-2 healthy. Saddle watch ran clean via scripts/saddle-watch.sh -- 645 listings, 0 Donahoe/Donaho/Barton hits (stayed quiet, nothing to tell Ryan). | OPEN ITEMS AWAITING CHRIS (flagged 2026-08-29, do NOT re-ping repeatedly): (1) WFP_TEST_MODE still 'true' in prod -- pick locking disabled, Week 1 opener Wed 2026-09-09 8:20pm ET; (2) NFL pool users table EMPTY, everyone must re-register; (3) WhatsApp channel 'not linked', needs QR relink. Draft re-registration message ready at projects/nfl-agent/draft-reregistration-message.md (3 options, NOT sent, needs approval + channel decision since pool iMessage group is dormant)."
 }
