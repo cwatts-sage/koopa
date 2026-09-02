@@ -3,9 +3,9 @@
     "email": null,
     "calendar": null,
     "weather": null,
-    "saddle_watch": 1788186434,
+    "saddle_watch": 1788377232,
     "systems_check": 1788335809,
     "imsg_watchdog": 1788335809
   },
-  "notes": "2026-09-02 AM (kickoff T-7 days): imsg PASS (IMCore v2), gateway 2026.7.1-2 running, pool unchanged 5 users/1 pick, TEST_MODE STILL TRUE. Three items pending Chris: (1) WFP_TEST_MODE=false, (2) nudge Geo, (3) pick tiebreaker option A/B/C per projects/nfl-agent/TIEBREAKER-DECISION.md. | 2026-09-01 AM (kickoff T-8 days): imsg watchdog PASS (IMCore v2), gateway 2026.7.1-2 running, Tuesday refresh cron armed (fires 6am ET, dry-run pre-verified safe 08-31). Pool unchanged: 5 users, 1 pick (Marion 16/16), TEST_MODE STILL TRUE. | 2026-08-31 saddle watch: ran, 645 listings, 0 hits. VERIFIED not a stale cache -- spot-checked newest page, real varied inventory (McCall/Oliver/Bitterroot/Bob Roy/Tomahawk). Script is working; there are simply no Donahoe/Barton saddles listed. | 2026-08-31 AM: imsg watchdog PASS (v0.14.2, IMCore v2). Gateway 2026.7.1-2 healthy. Pool unchanged overnight: 5"
+  "notes": "2026-09-02 saddle watch: 645 listings, 0 hits. TURNOVER VERIFIED -- newest listings completely different from 08-31 (Tad Knowles/Ruben Moran/Hangin C/Jason Senior vs prior McCall/Oliver/Bitterroot). The constant 645 is just steady site inventory depth, not a cache. Watch confirmed working. | 2026-09-02 AM (kickoff T-7 days): imsg PASS (IMCore v2), gateway 2026.7.1-2 running, pool unchanged 5 users/1 pick, TEST_MODE STILL TRUE. Three items pending Chris: (1) WFP_TEST_MODE=false, (2) nudge Geo, (3) pick tiebreaker option A/B/C per projects/nfl-agent/TIEBREAKER-DECISION.md. | 2026-09-01 AM (kickoff T-8 days): imsg watchdog PASS (IMCore v2), gateway 2026.7.1-2 running, Tuesday refresh cron armed (fires 6am ET, dry-run pre-verified safe 08-31). Pool unchanged: 5 users, 1 pick (Marion 16/16), TEST_MODE STILL TRUE. | 2026-08-31 saddle watch: ran, 645 listings, 0 hits. VERIFIED not a stal"
 }
