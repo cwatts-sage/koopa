@@ -106,3 +106,36 @@ different curve than later ones.
 1. Position-based scoring vs straight cumulative — more fun, or does it punish a great week?
 2. If someone doesn't submit picks: zero, or still collect points for showing up?
 3. With 10+ players, 11th and back earns nothing. Fair, or minimum 1 pt for submitting?
+
+---
+
+## ✅ Implementation feasibility — verified 2026-09-04
+
+I checked the claim "F1 points are a pure post-processing step" rather than asserting it.
+
+**It holds.** `scripts/score-week.js` already builds a `weekScores` map
+(`rowKey -> {name, correct, total}`) at line ~186, *before* any standings writes. F1
+points can be computed from that map with no changes to fetching, matching, or scoring.
+
+**Working award function written and tested** — `projects/nfl-agent/f1-award-function.js`
+(`node f1-award-function.js` to run the cases):
+
+| case | result |
+|---|---|
+| 10 players, no ties | 25/18/15/12/10/8/6/4/2/1 — pot 101.0 ✅ |
+| 2-way tie for 1st | 21.5 / 21.5, next gets 15 ✅ |
+| 3-way tie for 1st | 19.3 each, next gets 12 ✅ |
+| all 5 tied | 16.0 each ✅ |
+| 12 players | 11th & 12th get 0 ✅ |
+| small pool (3) | 25/18/15 ✅ |
+
+**Pot conservation verified:** every 10-player case totals exactly 101.0 (=sum of the grid).
+
+⚠️ **Known rounding artifact:** a 3-way tie splits 58/3 = 19.333…, stored as 19.3, so the
+week totals 100.9 instead of 101.0 — a **0.1 point drift**. Harmless, but don't let it
+look like a bug later. Alternative if it ever matters: store F1 points ×10 as integers.
+
+**Remaining work if approved is small:** call `awardF1Points(weekScores)` in
+`score-week.js`, persist as `weeklyF1` + `f1Points` on standings rows, and add the column
+to `api/standings`. Existing `totalPoints` (raw correct) stays untouched — which is exactly
+what the recommended "straight standings + parallel Race Wins board" option needs.
