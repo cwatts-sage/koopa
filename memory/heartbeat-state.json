@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1788377232,
-    "systems_check": 1788418610,
-    "imsg_watchdog": 1788418610
+    "systems_check": 1788591415,
+    "imsg_watchdog": 1788591415
   },
-  "notes": "2026-09-03 AM (kickoff T-6 days): imsg PASS (IMCore v2), gateway 2026.7.1-2 running, pool unchanged 5 users/1 pick, TEST_MODE STILL TRUE. Chris away since ~08-30; three items pending: (1) WFP_TEST_MODE=false, (2) nudge Geo, (3) tiebreaker A/B/C. | 2026-09-02 saddle watch: 645 listings, 0 hits. TURNOVER VERIFIED -- newest listings completely different from 08-31 (Tad Knowles/Ruben Moran/Hangin C/Jason Senior vs prior McCall/Oliver/Bitterroot). The constant 645 is just steady site inventory depth, not a cache. Watch confirmed working. | 2026-09-02 AM (kickoff T-7 days): imsg PASS (IMCore v2), gateway 2026.7.1-2 running, pool unchanged 5 users/1 pick, TEST_MODE STILL TRUE. Three items pending Chris: (1) WFP_TEST_MODE=false, (2) nudge Geo, (3"
+  "notes": "2026-09-05 AM (T-4 to Wed 9/9 kickoff): imsg PASS (IMCore v2), gateway 2026.7.1-2 running. Pool: 6 users, 3 pick sets, TEST_MODE STILL TRUE. No reply from Chris since 09-03 23:10. Pending: (1) WFP_TEST_MODE=false [URGENT], (2) ACS setup, (3) invite gate/who is Donna, (4) nudge Geo, (5) F1 go/no-go awaiting Geo opinion. | 2026-09-03 AM (kickoff T-6 days): imsg PASS (IMCore v2), gateway 2026.7.1-2 running, pool unchanged 5 users/1 pick, TEST_MODE STILL TRUE. Chris away since ~08-30; three items pending: (1) WFP_TEST_MODE=false, (2) nudge Geo, (3) tiebreaker A/B/C. | 2026-09-02 saddle watch: 645 listings, 0 hits. TURNOVER VERIFIED -- newest listings completely different from 08-31 (Tad Knowles/Ruben Moran/Hangin C/Ja"
 }
