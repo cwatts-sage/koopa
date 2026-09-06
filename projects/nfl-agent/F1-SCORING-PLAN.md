@@ -139,3 +139,42 @@ look like a bug later. Alternative if it ever matters: store F1 points ×10 as i
 `score-week.js`, persist as `weeklyF1` + `f1Points` on standings rows, and add the column
 to `api/standings`. Existing `totalPoints` (raw correct) stays untouched — which is exactly
 what the recommended "straight standings + parallel Race Wins board" option needs.
+
+---
+
+## ⚠️ Non-submitters: a gap found 2026-09-06 that F1 turns into a real bug
+
+`scripts/score-week.js` builds `weekScores` by iterating **`allPicks`** — i.e. only
+players who actually submitted that week. A registered player who submits nothing gets
+**no standings entry for that week at all**.
+
+**Under straight cumulative scoring this is harmless.** A missing week contributes 0
+either way, so `totalPoints` stays correct. (Only cosmetic downside: `weeklyScores` has a
+gap, so you can't distinguish "scored 0" from "didn't play".)
+
+**Under F1 scoring it changes everyone's points.** Real example — 6 registered, 2 submitted:
+
+| | Marion (11) | Donna (9) | 4 non-submitters |
+|---|---|---|---|
+| **Current code** (submitters only) | 25 | 18 | — (skipped) |
+| **If absent = 0 correct** | 25 | 18 | **11.3 each** |
+
+Two problems visible immediately:
+1. Under current behavior Donna earns **18 pts for finishing last** — second place in a
+   two-person field pays like second in a ten-person field.
+2. If absent players are recorded as 0, they collect **11.3 points each for doing nothing**,
+   because they fill grid slots 3rd–6th.
+
+**Neither is right.** This is exactly Geo's question #2 ("if somebody doesn't submit picks —
+zero, or do they still collect points for showing up?") and it needs an explicit rule
+before F1 ships. Sensible default:
+
+> **Only players who submitted picks are ranked on the grid. Non-submitters score 0 and
+> do not occupy a finishing position.**
+
+That keeps Marion=25 / Donna=18 above, and absent players get 0 — but it also means a
+sparse week pays out nearly the full grid to very few people. If that feels too generous,
+the alternative is to award only the top `min(submitters, 10)` slots scaled to turnout.
+
+**Action:** no code change made — this is a rules decision for Chris + Geo. Flagging so
+F1 doesn't ship with an accidental rule baked in.
