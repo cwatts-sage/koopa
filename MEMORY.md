@@ -10,6 +10,14 @@
 
 ## Active Projects
 
+### Geo's Pool — water chemistry advisory 🏊
+- **Full reference: `memory/geo-pool.md`** (equipment, targets, dose math, test history, gotchas)
+- Geo (+13038879556) texts morning AccuBlue tests; I run chemistry + prescribe doses
+- ~13,000 gal, Pebble Tec ~7yrs, Phoenix AZ
+- **Equipment:** Triton II TR-100C sand filter (⚠️ sand due replacement winter 2026-27);
+  Pentair IntelliFlo2 VSF variable speed/flow pump
+- **Open issue:** phosphates spiking 0→59→228 ppb in 3 days, source hunt underway
+
 ### NFL Pick 'Em Web App (Watts Football Commissioner 🏈⚡)
 - **Status:** Web app built and deployed, simulation testing with 2024 season data
 - **Live URL:** https://zealous-glacier-0155d740f.2.azurestaticapps.net
