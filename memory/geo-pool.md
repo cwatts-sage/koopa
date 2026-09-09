@@ -153,6 +153,100 @@ wasted electricity.**
 - Muriatic 31.45%: bites HARD when TA is low — go conservative under TA 65
   - ⚠️ fill water constantly re-raises TA/pH, so favor small repeat doses
 
+## 🧪 CHEMICAL SHELF INVENTORY (labels photographed 2026-09-09)
+
+| product | active ingredient | adds | status |
+|---|---|---|---|
+| **HASA CHLOR** | Sodium hypochlorite **12.5%** | nothing bad | ✅ **PRIMARY — use this** |
+| **HASA Muriatic Acid** | Hydrochloric acid **31.45%** | — | ✅ pH control |
+| Baking soda (Arm & Hammer) | 100% sodium bicarb | — | ✅ TA control |
+| Leslie's Power Powder Pro | **Calcium hypochlorite 73%** | ⚠️ CALCIUM (~7 ppm CH/lb) | ✅ **NOT USED since refill** (Geo 09-09) — keep it that way |
+| **Leslie's 3" Jumbo Tabs** | **Trichlor-s-triazinetrione 99%** | ⚠️ **CYA** (~6 ppm/tab) | 🛑 **STOP — CYA already 90** |
+| **Leslie's Perfect Weekly** | Natural Chemistry enzyme; "Removes phosphates" | ❓ **PO4 SUSPECT** | ❓ usage unknown — ASK |
+| Jack's Magic Magenta Stuff | sequestrant + **Phos-Stop Plus** | "will NOT yield phosphates" (label) | ✅ cleared; 1 dose at fill |
+| Bio-Dex Skill-It | Alkyl dimethyl benzyl ammonium chloride 50% (quat) | no PO4 | ✅ clean |
+| Leslie's Ultra Bright Advanced | clarifier | no PO4 listed | ✅ **NEVER USED** (Geo 09-09) |
+
+### ✅✅ SOLVED — PRE-DRAIN TEST FOUND (Leslie's #238, 08/08/26)
+**Geo sent the BEFORE-DRAIN Leslie's test. Everything now makes sense.**
+
+| test | **08-08 PRE-drain** | 09-09 post-drain | Δ |
+|---|---|---|---|
+| FC | 2.65 | 5.91 | |
+| pH | 7.4 | 7.9 | |
+| TA | 4 (!) | 80 | |
+| **CH** | **660** | **561** | ↓15% |
+| **CYA** | **209** (!!) | **89** | ↓57% |
+| **PO4** | **55** | 130 | |
+| **TDS** | **5000** (!!) | 1500 | ↓70% |
+
+**⇒ THE DRAIN WAS A DILUTION EVENT, NOT A RESET.** CH and CYA were ALREADY sky-high.
+They didn't come from anything added after — they're the **residual** of a pool that
+was at CYA 209 / CH 660 / TDS 5000.
+
+**Math checks out:** TDS 5000→1500 = ~70% dilution. CYA 209 → ~63 expected; measured 89.
+CH 660 → ~198 expected + fill water 119 ≈ 250; measured 561. Both HIGHER than a clean
+70% dilution predicts ⇒ **the drain was less complete than "6 inches" suggests**
+(spa + waterfall + all plumbing/filter volume never drained), and/or refill was partial.
+Either way: **no mystery source. It's leftover.**
+
+**🔑 AND THE PHOSPHATE ANSWER: PO4 was 55 ppb BEFORE the drain.** Never zero.
+The "0 ppb" on 09-05 was a bad reading. So the "0→59→228" climb was never a real
+spike — it was AccuBlue converging on a pre-existing 55-250 ppb level. **CASE CLOSED.**
+
+**🚨 CRITICAL — LESLIE'S OWN PRESCRIBED ROUTINE IS WHAT WRECKED THIS POOL:**
+The 08-08 sheet's "WEEKLY MAINTENANCE ROUTINE" told Geo to:
+1. "Maintain FC using **Leslie's Tabs**" ← **TRICHLOR = the CYA 209 source**
+2. "Add 12 oz of any **Leslie's Shock** weekly" ← **cal-hypo = the CH 660 source**
+3. "Add 6 fl oz **Perfect Weekly** every week"
+Then the SAME sheet flags Very High CH, Very High CYA, High TDS and recommends
+**draining the pool**. They sold him the problem and then the solution.
+⇒ **NEVER follow the Leslie's prescription sheet. This is documented proof.**
+⇒ Also note it told him to add **14 lbs 2 oz of Alkalinity Up** — the TA "4" reading is
+  a CYA-adjusted artifact (at CYA 209 nearly all measured TA is cyanurate).
+
+### (superseded) CH 561 + CYA 89 "unexplained" — resolved above
+**REFILL WAS ESSENTIALLY COMPLETE.** Geo drained to **~6 inches** (stopped there
+because the **pump began cavitating**). So this was a real drain, not a top-up.
+
+**Everything I proposed is eliminated:**
+- ❌ cal-hypo — **not used since refill** (Geo 09-09)
+- ❌ trichlor tabs — not used since refill
+- ❌ fill water — CH only 119, CYA only 5 (Leslie's tap test)
+- ❌ legacy/carryover water — only ~6" remained. In a 10,500 gal pool that's roughly
+  **3-5% of volume**. Old water at even CYA 100 would carry forward only ~3-5 ppm.
+  **CANNOT produce CYA 89.**
+
+**❗ CYA is the hard constraint: cyanuric acid does not form spontaneously.**
+It comes ONLY from trichlor, dichlor, or granular stabilizer. If none were added
+post-refill, CYA 89 is impossible — therefore one of these must be true:
+  1. **Something WAS added that Geo didn't count** — e.g. a pool service visit, a
+     "startup kit"/conditioner at refill, or a stabilizer dose he doesn't think of
+     as a chemical. **⭐ MOST LIKELY. ASK: who did the refill/startup, and did anyone
+     add conditioner or stabilizer?**
+  2. **The refill is older than "a few weeks"** and tabs WERE used early on.
+     **ASK FOR THE ACTUAL REFILL DATE.**
+  3. **AccuBlue + Leslie's both wrong on CYA** — unlikely, they agreed (90 vs 89),
+     but note AccuBlue misread CH 801 on 09-05, so the platform isn't infallible.
+
+**CH 561 has the same problem** but is slightly less impossible (calcium can come
+from plaster curing — **Pebble Tec is 7 yrs old, so no**; or from hard fill water
+over time — but fill is only 119).
+⭐ **If the pool was refilled by a service company, ask whether they used a
+"start-up" product or balanced it — many startup regimens add calcium chloride
+AND stabilizer.** That one event would explain BOTH numbers at once.
+
+- ⚠️ **Neither CH nor CYA can be lowered except by DILUTION (drain/refill).**
+  Not recommending another drain. Just stop the inputs and manage around them.
+- 💡 Silver lining: CYA ~90 is high but WORKABLE at FC 8-10. CH 561 is high but
+  manageable if pH is held down. Neither is an emergency.
+
+### ✅ GO-FORWARD KIT (only these three)
+**HASA 12.5% liquid chlorine · baking soda · muriatic acid**
+Zero calcium added, zero CYA added. Everything else stays on the shelf.
+⚠️ Also: cal-hypo doesn't fully dissolve — fines settle and can etch/stain Pebble Tec,
+and with degraded sand some passes straight back through the filter.
+
 ## Active issues
 - 🚨 **Phosphates: 0 (09-05) → 59 (09-07) → 228 (09-08) → 249 home / 130 Leslie's (09-09)**
   - **Climb has PLATEAUED.** And PO4 test spread is ~2x, so exact value is soft.
@@ -180,10 +274,14 @@ wasted electricity.**
        ~2x spread. The absolute value is genuinely unreliable.
     3. Source water at REFILL (pool was refilled weeks ago) — but current tap = 0 ppb,
        so only relevant if refill water differed. Low likelihood.
-  - **🔎 STATUS 09-09: NO SOURCE FOUND. Every hypothesis eliminated.**
-    Products ❌ · tabs ❌ · Magenta Stuff ❌ · fill water ❌ (0 ppb) · neglected debris ❌
-    (he vacs/brushes weekly). What's left is mainly **test-method uncertainty**
-    (249 vs 130 on the same water) plus normal ambient desert load.
+  - 🔎 **STATUS 09-09 (evening): ONE LIVE SUSPECT REMAINS — LESLIE'S PERFECT WEEKLY.**
+    Natural Chemistry enzyme product, front label reads **"Removes phosphates."**
+    It's the ONLY item on the shelf that mentions phosphates at all, and it's designed
+    for **weekly** dosing = a recurring input that could match the 0→59→228 climb.
+    ❗ **UNANSWERED: has Geo been dosing it, and how recently?** Ask again next session.
+  - Eliminated: tabs ❌ · Magenta Stuff ❌ · fill water ❌ (0 ppb) · clarifier ❌ (never
+    used) · Skill-It ❌ · neglected debris ❌ (vacs/brushes weekly).
+    Remaining alternative: **test-method uncertainty** (249 vs 130 same water).
   - **DEFAULT POSITION: stop hunting.** Clear water + FC ~6 holding + CC 0.00 means
     phosphates are feeding nothing. Log the number, watch the trend, take no action.
     Only revisit if PO4 keeps climbing week-over-week AND chlorine demand returns.
@@ -233,3 +331,38 @@ panel — treat as trend only, never act on a single value.
 (20% → 60% on near-identical water, 1 hr apart, same company.) Their raw numbers are
 trustworthy; their recommendations are inventory management (they pushed shock +
 algaecide on a clear pool with CC 0.00).
+
+## ✅ 09-09 SESSION OUTCOME (summary)
+**Chemistry is HEALTHY.** FC ~6 holding, CC 0.00, TA restored 58→80, water clear.
+
+**Corrections to my model (all from Geo's direct observation):**
+- Volume 13,000 → **10,500 gal** (spa + waterfalls included)
+- HASA confirmed **12.5%** (not 2.5%) → oz × 0.114 = ppm FC
+- Two pH drivers found: high-TA/high-pH fill water (TA 136 / pH 8.2) **+** forced
+  continuous aeration (waterfall is the de-facto return path)
+- Standpipe in vac line is **correct and intentional** — prevents skimmer air-suck
+- Main drain permanently plugged — **settled, never raise again**
+
+**Phosphate hunt: CLOSED. No source exists. No action.**
+
+**✅ SOLVED by the 08-08 pre-drain Leslie's test:** pool was at **CYA 209, CH 660,
+TDS 5000, PO4 55** BEFORE the drain. Current 89/561/1500/130 are simply the DILUTED
+remainder. Nothing was added — it's residual. **And PO4 was never 0**, so the
+"phosphate spike" was measurement convergence, not a real event.
+**Root cause of the original mess: Leslie's own prescribed weekly routine
+(trichlor tabs + cal-hypo shock).**
+
+**Go-forward kit: HASA 12.5% liquid + baking soda + muriatic acid ONLY.**
+
+## TODO next Geo session
+- [x] ~~ASK about refill/startup chemicals~~ ✅ **ANSWERED** by 08-08 pre-drain test:
+      CH 660 / CYA 209 / TDS 5000 / PO4 55 before the drain. All residual, not added.
+- [ ] Consider a **partial drain/refill later (cooler weather)** to pull CH + CYA down
+      further — NOT urgent, NOT in September heat. Revisit Oct/Nov.
+- [ ] 09-10 morning AccuBlue — watch TA holds ~80, PO4 trend direction
+- [ ] **Test low RPM (1700-2000)** — does skimmer stay quiet without air?
+      Payoff: less aeration → slower pH rise, cheaper power, easier on tired sand
+- [ ] Where does the 3-way valve handle actually SIT during a normal run?
+      (free test for the weak pool returns)
+- [ ] Winter 2026-27: sand replacement (Triton II TR-100C) + look at return lines
+- [ ] Re-log RPM/PSI curve after sand change (baseline: 1700/6, 2800/17, 3250/18)
