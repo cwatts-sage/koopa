@@ -20,7 +20,7 @@
 
 ### NFL Pick 'Em Web App (Watts Football Commissioner 🏈⚡)
 - **Status:** Web app built and deployed, simulation testing with 2024 season data
-- **Live URL:** https://zealous-glacier-0155d740f.2.azurestaticapps.net
+- **Live URL:** https://thankful-grass-00148f40f.6.azurestaticapps.net
 - **Azure RG:** NFL (tenant: wattsupcloudsolutions.com)
 - **SP login:** `scripts/azure-login.sh` (creds in ~/.openclaw/secrets/azure-nfl-sp.json)
 - **Deploy token:** 24fe77333d0e6f6871dad758b3c4d3247753e67ae450834555a37ad0c14b2a4c02-a79cd14f-485f-4e6b-bd9c-d73b0ec1426f00f31120155d740f

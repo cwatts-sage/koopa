@@ -12,7 +12,7 @@ as soon as people start submitting.
 - **Cowboys @ Giants** — Sun Night 8:20 PM (Chris's team)
 - **Broncos @ Chiefs** — Mon Night 8:15 PM (Geo's Broncos; Marion has BOTH)
 - **Bills @ Texans** — Sun 1:00 PM (Bills fan in the pool)
-- Site: https://zealous-glacier-0155d740f.2.azurestaticapps.net
+- Site: https://thankful-grass-00148f40f.6.azurestaticapps.net
 
 ⚠️ Do NOT explain the database wipe in detail to the group — keep it light.
 No need to advertise infrastructure problems.
@@ -29,7 +29,7 @@ No need to advertise infrastructure problems.
 > One thing first: the app got a fresh start for the new season, so
 > **everybody needs to make their account again.** Takes 30 seconds:
 >
-> 👉 https://zealous-glacier-0155d740f.2.azurestaticapps.net
+> 👉 https://thankful-grass-00148f40f.6.azurestaticapps.net
 >
 > Then get your Week 1 picks in. And what a Week 1 it is:
 > • **Cowboys @ Giants** — Sunday Night 🌟
@@ -45,7 +45,7 @@ No need to advertise infrastructure problems.
 > 🏈 **Watts Football Pool — Week 1 starts Wed Sept 9!**
 >
 > The app's been reset for the new season, so please re-create your account:
-> 👉 https://zealous-glacier-0155d740f.2.azurestaticapps.net
+> 👉 https://thankful-grass-00148f40f.6.azurestaticapps.net
 >
 > Once you're in, make your Week 1 picks. Picks lock 1 hour before kickoff.
 >
@@ -57,22 +57,22 @@ No need to advertise infrastructure problems.
 
 **Chris** (+14438571551)
 > 🏈 Pool's live for 2026, Chris. Re-register here:
-> https://zealous-glacier-0155d740f.2.azurestaticapps.net
+> https://thankful-grass-00148f40f.6.azurestaticapps.net
 > Your Cowboys open Sunday Night vs the Giants. 👑
 
 **Geo** (+13038879556)
 > 🏈 Geo! Title defense time — you took Week 1 last season 11/16.
-> Re-register for the new season: https://zealous-glacier-0155d740f.2.azurestaticapps.net
+> Re-register for the new season: https://thankful-grass-00148f40f.6.azurestaticapps.net
 > Your Broncos get the Chiefs on Monday Night. Perfect start. ✈️🔥
 
 **Stephanie** (+14438576044)
 > 🏈 Stephanie — Watts Football Pool is back for 2026!
-> Quick re-register: https://zealous-glacier-0155d740f.2.azurestaticapps.net
+> Quick re-register: https://thankful-grass-00148f40f.6.azurestaticapps.net
 > Week 1 kicks off Wed Sept 9.
 
 **Marion** (+18173130383)
 > 🏈 Marion — pool's live for the new season.
-> Re-register: https://zealous-glacier-0155d740f.2.azurestaticapps.net
+> Re-register: https://thankful-grass-00148f40f.6.azurestaticapps.net
 > Heads up: Broncos @ Chiefs on Monday Night. Two of your teams, one pick. Good luck. 😈
 
 ---
