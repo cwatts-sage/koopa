@@ -22,9 +22,33 @@ After sending via `message` tool, respond with ONLY: `NO_REPLY`
 - WhatsApp: `channel="whatsapp"`
 
 **iMessage (imsg) notes:**
-- Backend: `/opt/homebrew/bin/imsg` v0.10.0 (steipete/tap/imsg)
-- Direct CLI send (fallback/testing): `imsg send --chat-id <id> --text "..."`
+- Backend: `/opt/homebrew/bin/imsg` v0.14.2 (steipete/tap/imsg)
 - Group send target format: `any;+;7a86bd1e528944bf935389d6536d1e19` (NOT old bluebubbles `chat_guid:` prefix)
+
+### ⚠️ CLI fallback: use `send-rich`, NOT `send` (verified 2026-09-11)
+
+If the `message` tool is unavailable (not always in the policy-filtered toolset):
+
+```
+imsg chats                          # find numeric chat id
+imsg group --chat-id <id>           # get the guid
+imsg send-rich --chat 'iMessage;-;+14438571551' --text "..."
+imsg history --chat-id <id> --limit 1   # ALWAYS verify delivery
+```
+
+- ❌ `imsg send --chat-id +1443...` → "Unknown chat id". `--chat-id` wants the
+  **numeric** id from `imsg chats`, not a phone number.
+- ❌ `imsg send --chat-id 2 --text ...` → **HANGS indefinitely** (AppleScript
+  path), gets SIGKILLed, and the message does **NOT** deliver.
+- ✅ `imsg send-rich --chat '<guid>' --text ...` → "queued", exit 0, delivers in
+  seconds. Routes through the IMCore bridge (needs `imsg launch` + SIP disabled;
+  check with `imsg status`).
+- **Never report a send as successful without checking `imsg history`.** A killed
+  or hung send looks like it might have worked and did not.
+
+**Known chat ids:** Chris = `2` (`iMessage;-;+14438571551`) · George = `12`
+(`+13038879556`) · Watts Football Pool group = `3`
+(`7a86bd1e528944bf935389d6536d1e19`)
 - Private API (reactions/replies/effects) requires `imsg launch` (dylib injection; SIP disabled). Re-run `imsg launch` if Messages.app restarts.
 - Restart gateway with: `launchctl kickstart -k gui/501/ai.openclaw.gateway` (NOT `openclaw gateway restart` — fails port-busy from inside)
 
