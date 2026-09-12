@@ -3,9 +3,9 @@
     "email": null,
     "calendar": null,
     "weather": null,
-    "saddle_watch": 1788622025,
-    "systems_check": 1788764218,
-    "imsg_watchdog": 1788764218
+    "saddle_watch": 1789203446,
+    "systems_check": 1789203446,
+    "imsg_watchdog": 1789203446
   },
-  "notes": "2026-09-07 MON (T-2d16h to first pick lock Wed 9/9 7:20PM ET): systems green. TEST_MODE STILL TRUE - escalated to Chris Monday AM as planned. Chris last replied 09-03 23:10 (4 days). If unreachable through Tue, Week 1 picks will NOT lock. | 2026-09-06 AM (T-3 to Wed 9/9 kickoff): imsg PASS, gateway running, pool 6 users/3 picks, TEST_MODE STILL TRUE. Chris last replied 09-03 23:10 (3 days). URGENT unresolved: WFP_TEST_MODE=false must be set before Wed 7:20PM ET or Week 1 picks never lock (exposure ~5 days). | 2026-09-05 saddle watch: 6"
+  "notes": "2026-09-12 SAT: imsg PASS (IMCore v2), gateway 2026.7.1-2, site 200, 11 players. Saddle watch 645 listings 0 hits. Week 1: 2/16 games scored, Chris+Mercedez 2/2. OPEN: deploy path decision (SWA provider=SwaCli, repo=null so Actions never fires; api/shared/f1.js is mode 600 = EACCES landmine, needs chmod before any local swa deploy). | 2026-09-07 MON (T-2d16h to first pick lock Wed 9/9 7:20PM ET): systems green. TEST_MODE STILL TRUE - escalated to Chris Monday AM as planned. Chris last replied 09-03 23:10 (4 days). If unreachable through Tue, Week 1 picks will NOT lock. | 2026-09-06 AM (T-3 to Wed 9/9 kickoff): imsg PASS, gateway "
 }
