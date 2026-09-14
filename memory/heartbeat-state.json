@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1789203446,
-    "systems_check": 1789288026,
-    "imsg_watchdog": 1789288026
+    "systems_check": 1789376241,
+    "imsg_watchdog": 1789376241
   },
-  "notes": "2026-09-13 SUN (13-game slate): imsg PASS, gateway 2026.7.1-2, site 200. 2/16 locked (Wed+Thu games). Sunday 1pm games lock 12:00 PM ET. All 11 players have full Wk1 slates so nobody is at risk. Week 1 closes Mon night (DEN@KC) -> then run score-week.js 1 for F1 award. OPEN: deploy path decision. | 2026-09-12 SAT: imsg PASS (IMCore v2), gateway 2026.7.1-2, site 200, 11 players. Saddle watch 645 listings 0 hits. Week 1: 2/16 games scored, Chris+Mercedez 2/2. OPEN: deploy path decision (SWA provider=SwaCli, repo=null so Actions never fires; api/s"
+  "notes": "2026-09-14 MON: imsg PASS, gateway 2026.7.1-2, site 200. SNF scored by parallel session (verified in storage: Marion 12/15 leads, F1 still 0 for all - correct, week not closed). TONIGHT: Broncos@Chiefs 8:15pm closes Week 1 -> then run score-week.js 1 to award first F1 grid. Chiefs win = Marion outright 25pts; Broncos win = Marion+Mercedez split 21.5 each. | 2026-09-13 SUN (13-game slate): imsg PASS, gateway 2026.7.1-2, site 200. 2/16 locked (Wed+Thu games). Sunday 1pm games lock 12:00 PM ET. All 11 players have full Wk1 slates so nobody is at risk. Week "
 }
