@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1789203446,
-    "systems_check": 1789376241,
-    "imsg_watchdog": 1789376241
+    "systems_check": 1789549035,
+    "imsg_watchdog": 1789549035
   },
-  "notes": "2026-09-14 MON: imsg PASS, gateway 2026.7.1-2, site 200. SNF scored by parallel session (verified in storage: Marion 12/15 leads, F1 still 0 for all - correct, week not closed). TONIGHT: Broncos@Chiefs 8:15pm closes Week 1 -> then run score-week.js 1 to award first F1 grid. Chiefs win = Marion outright 25pts; Broncos win = Marion+Mercedez split 21.5 each. | 2026-09-13 SUN (13-game slate): imsg PASS, gateway 2026.7.1-2, site 200. 2/16 locked (Wed+Thu games). Sunday 1pm games lock 12:00 PM ET. All 11 players have full Wk1 slates so nobody is at risk. Week "
+  "notes": "2026-09-16 WED: imsg PASS, gateway 2026.7.1-2, site 200. Wk1 final+scored (Marion 25pts, pot 101.0). Wk2: 16 games, 0 locked, 1/11 picks in, first lock Lions@Bills Thu 9/17 7:15pm ET (NOT Wed - corrected). Scoring automated via 2 crons. OPEN: Chris to add AZURE_CREDENTIALS repo secret to finish CI/CD (workflow already rewritten+pushed 3d621a9); Chris truncated msg \"first update the...\" unanswered. | 2026-09-14 MON: imsg PASS, gateway 2026.7.1-2, site 200. SNF scored by parallel session (verified in storage: Marion 12/15 leads, F1 still 0 for all - correct, week not closed). TONIGHT: Broncos@Chief"
 }
