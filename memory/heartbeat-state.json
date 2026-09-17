@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1789203446,
-    "systems_check": 1789549035,
-    "imsg_watchdog": 1789549035
+    "systems_check": 1789631838,
+    "imsg_watchdog": 1789631838
   },
-  "notes": "2026-09-16 WED: imsg PASS, gateway 2026.7.1-2, site 200. Wk1 final+scored (Marion 25pts, pot 101.0). Wk2: 16 games, 0 locked, 1/11 picks in, first lock Lions@Bills Thu 9/17 7:15pm ET (NOT Wed - corrected). Scoring automated via 2 crons. OPEN: Chris to add AZURE_CREDENTIALS repo secret to finish CI/CD (workflow already rewritten+pushed 3d621a9); Chris truncated msg \"first update the...\" unanswered. | 2026-09-14 MON: imsg PASS, gateway 2026.7.1-2, site 200. SNF scored by parallel session (verified in storage: Marion 12/15 leads, F1 still 0 for all - correct, week not closed). TONIGHT: Broncos@Chief"
+  "notes": "2026-09-17 THU: imsg PASS, gateway 2026.7.1-2. Wk1 standings VERIFIED INTACT after multiple automated cron runs (Marion 25, pot exactly 101.0) - the scoring crons are idempotent on a closed week. Wk2: 6/11 picks, first lock Lions@Bills tonight 7:15pm ET. Missing picks: Casi, Chris, Conner, Kelly, Sean. OPEN: AZURE_CREDENTIALS repo secret for CI/CD; Chris truncated msg. | 2026-09-16 WED: imsg PASS, gateway 2026.7.1-2, site 200. Wk1 final+scored (Marion 25pts, pot 101.0). Wk2: 16 games, 0 locked, 1/11 picks in, first lock Lions@Bills Thu 9/17 7:15pm "
 }
