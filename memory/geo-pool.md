@@ -314,6 +314,40 @@ and with degraded sand some passes straight back through the filter.
 | 09-09 home 09:55 | 5.06 | 5.35 | 0.29 | 7.9 | 77 | 556 | 90 | 249 |
 | 09-09 Leslie's 10:54 | 5.91 | 5.91 | 0.00 | 7.9 | 80 | 561 | 89 | 130 |
 | 09-09 TAP (hose) | 0.17 | — | — | 8.2 | 136 | 119 | 5 | **0** |
+| **09-18 Leslie's** | **0.06** | 0.23 | 0.17 | **8.1** | 84 | **493** | **71** | **42** |
+
+### 09-18 (Fri) — MONSOON WASHOUT
+**Context:** 2 monsoon nights + 1 day of light on/off rain. Geo manually vacuumed and
+did a brief **backwash (~200 gal, half spa depth)**. Water **very slightly cloudy**,
+otherwise looks good. TDS 3500 (up from 1500 — note: dilution should LOWER TDS; this
+reading is odd, watch it. Possibly storm debris load or test variance).
+
+**🚨 FC 0.06 = fully unprotected.** CC only ~0.17 though, so NO algae bloom — the pool
+simply ran out of chlorine, it wasn't losing a fight. Caught in the window.
+
+**✅ GOOD NEWS from the storms (rain = free distilled-water dilution):**
+- **PO4 130 → 42 ppb** — phosphate saga fully closed, still washing out. Never a source.
+- **CH 561 → 493** — the calcium problem is diluting itself for free
+- **CYA 89 → 71** — also diluted; now comfortably mid-range
+- **TA 84, holding steady** all week — baking soda work is sticking
+
+**Dose prescribed (evening 09-18):**
+- **100 oz HASA 12.5% @ 2800 rpm, pump running OVERNIGHT** (~11.4 ppm → target FC ~10)
+  - bumped 90 → 100 oz *because of the cloudiness* (organic load eats the first few ppm)
+- **NEXT MORNING: test first**, then **12 oz muriatic** (pH 8.1 → ~7.6). Never same night.
+- Geo confirmed: "Will add chlorine tonight" ✅
+
+**Decision rule given to Geo for 09-19 AM:**
+- FC ≥4 **and** clearing → proceed with 12 oz muriatic, coast, retest Sunday
+- FC <3 **or** not clearing → **text me BEFORE dosing** (means real organic demand)
+
+**Open ask:** post-backwash filter PSI @ 2800 rpm. Cleanest available read on how far
+the sand has degraded ahead of the winter replacement. Baseline was 17 PSI @ 2800.
+
+**⚠️ Leslie's slip AGAIN prescribed the pool-wrecking routine:** tabs for sanitizing,
+12 oz shock weekly, 6 oz Perfect Weekly. Told Geo to ignore it — this is the exact
+regimen that produced CYA 209 / CH 660 and forced the drain. Go-forward kit unchanged:
+**HASA 12.5% + baking soda + muriatic acid only.**
 
 ### 09-08 PM dose → 09-09 AM response
 Added 2.5 lb baking soda + 55 oz HASA 12.5% @ 2800 rpm.
@@ -355,6 +389,10 @@ remainder. Nothing was added — it's residual. **And PO4 was never 0**, so the
 **Go-forward kit: HASA 12.5% liquid + baking soda + muriatic acid ONLY.**
 
 ## TODO next Geo session
+- [ ] **09-19 AM: get FC + clarity report.** Decision rule above. Then 12 oz muriatic.
+- [ ] **Get post-backwash filter PSI @ 2800 rpm** (baseline 17) — sand degradation check
+- [ ] **Watch TDS** — read 3500 on 09-18 vs 1500 on 09-09. Dilution should push it DOWN,
+      so this is either storm load or test variance. Confirm on next test before acting.
 - [x] ~~ASK about refill/startup chemicals~~ ✅ **ANSWERED** by 08-08 pre-drain test:
       CH 660 / CYA 209 / TDS 5000 / PO4 55 before the drain. All residual, not added.
 - [ ] Consider a **partial drain/refill later (cooler weather)** to pull CH + CYA down
