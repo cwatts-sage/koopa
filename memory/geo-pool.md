@@ -316,6 +316,53 @@ and with degraded sand some passes straight back through the filter.
 | 09-09 TAP (hose) | 0.17 | — | — | 8.2 | 136 | 119 | 5 | **0** |
 | **09-18 Leslie's** | **0.06** | 0.23 | 0.17 | **8.1** | 84 | **493** | **71** | **42** |
 | **09-19 AM home** | **2.95** | 3.68 | **0.73** | **8.2** | 84 | 459 | 77 | **282** |
+| **09-20 AM home** | **7.86** | 8.45 | **0.59** | **8.3** | 85 | **524** | 75 | **342** |
+
+### 09-20 (Sun) AM — demand PERSISTS, but the trend is finally bending
+**Dose 09-19 PM: 110 oz HASA 12.5% = 12.5 ppm. Start 2.95 → expected ~15.5. Got 7.86.**
+⇒ **~7.6 ppm consumed overnight.** Compare 09-19: 8.5 ppm. Demand is still there but
+  slightly reduced (~0.63 ppm/hr vs 0.71). **Marginal improvement, not a break.**
+- **CC 0.73 → 0.59.** Down, but STILL above the 0.5 ceiling. Chlorine is still fighting.
+- **FC/CYA = 7.86/75 = 10.5%** ✅ — first time in the target 11-12% zone. Pool is
+  finally PROTECTED even though demand continues. This is the big win today.
+- 🚨 **pH 8.3 — NEW HIGH.** Progression 7.9 → 8.1 → 8.2 → 8.3. Acid has been deferred
+  two nights running and the aeration/fill-water drivers never stopped pushing.
+  **At CH 524 + pH 8.3 this is active scaling territory on 7-yr Pebble Tec.**
+- ⚠️ **CH 459 → 524 (+65).** Reverses the storm-dilution gift. Evaporation +
+  high-TA/CH-119 top-off refilling. Expected in Phoenix September — no calcium is
+  being ADDED (go-forward kit has none), it's concentration from evaporation.
+- **PO4 282 → 342.** Ignore. Known-unreliable reading (249 vs 130 same water 09-09),
+  and CC is falling + FC now holds. Phosphates are feeding nothing. **No remover.**
+- TA 85 steady ✅ · CYA 75 steady ✅ · Iron 0.1 / Cu 0.2 — trace, non-issue.
+
+**⚖️ DECISION RULE OUTCOME: middle branch (FC 4-8 OR CC ≥0.5) → "still feeding."**
+But with a key modification: **FC/CYA finally cleared 7.5% and hit 10.5%.** The pool is
+no longer underprotected. That changes the calculus — chlorine is now ADEQUATE even
+though demand persists. Holding FC alone won't fix this; **the sand is the problem.**
+
+**⇒ THIS IS THE NIGHT pH GETS ADDRESSED.** Rationale for flipping order-of-operations:
+- 09-19 I deferred acid because FC/CYA was 3.8% — sanitation emergency beat scale.
+- Today FC/CYA is 10.5% and CC is falling. Sanitation is no longer the emergency.
+- pH 8.3 at CH 524 is now the most damaging active problem. Also: high pH cripples
+  HOCl effectiveness, so lowering pH makes the EXISTING chlorine work harder —
+  it's a sanitation move as much as a scale move.
+
+**Prescribed 09-20:**
+- **NOW (morning): 20 oz muriatic 31.45%** → pH 8.3 → ~7.6. Larger than the 12-16 oz
+  previously floated because pH is higher and TA 85 gives buffer room. Pump on,
+  pour slowly over a return, do NOT combine with chlorine.
+- **Tonight: 70 oz HASA 12.5%** (~8 ppm). Smaller than the last two nights — FC starts
+  at 7.86, not 0.06/2.95. 7.86 − ~7 overnight demand + 8 = lands ~9 in the band.
+  Usual 2800 override.
+- **Wait 6+ hrs between acid and chlorine.** Acid AM, chlorine PM.
+- **Monday AM retest.**
+
+**Decision rule for Monday:**
+- CC <0.5 **and** FC ≥7 → demand finally breaking. Resume normal maintenance dosing.
+- CC still ≥0.5 → demand is structural = **the sand**. Stop trying to out-dose it;
+  get the sand replacement scheduled as the actual fix.
+- pH back ≥8.0 already → the acid isn't holding against aeration; consider a
+  small DAILY acid dose rather than periodic corrections.
 
 ### 09-19 (Sat) AM — 🚨 CHLORINE DEMAND IS REAL (post-monsoon)
 **Dose given 09-18 PM: 100 oz HASA 12.5% = ~11.4 ppm. Expected FC ~10-11. Got 2.95.**
@@ -489,10 +536,17 @@ remainder. Nothing was added — it's residual. **And PO4 was never 0**, so the
 ## TODO next Geo session
 - [x] ~~09-19 AM: FC + clarity report~~ ✅ **DONE** — FC 2.95, CC 0.73, pH 8.2. Demand is
       REAL. Prescribed 110 oz chlorine, acid DEFERRED to Sunday. See 09-19 entry.
-- [ ] **09-20 (Sun) AM: retest — this is the decision point.** FC≥8 & CC<0.5 → 16 oz
-      muriatic + back to normal. FC<4 or worsening → SLAM protocol, not one-shot doses.
-- [ ] **pH 8.2 is unresolved and climbing** (7.9 → 8.1 → 8.2). Once FC is stable this
-      becomes the priority — at CH 459 it's a scaling risk on 7-yr Pebble Tec.
+- [x] ~~09-20 (Sun) AM: retest — decision point~~ ✅ **DONE.** FC 7.86, CC 0.59, pH 8.3.
+      Middle branch: demand persists (~7.6 ppm/night) BUT FC/CYA hit 10.5% = protected.
+      Flipped to acid-first: 20 oz muriatic AM + 70 oz chlorine PM.
+- [ ] **09-21 (Mon) AM: does the acid hold?** If pH is back ≥8.0 in one day, aeration is
+      beating periodic dosing → switch to small DAILY acid. If CC still ≥0.5, demand is
+      structural and the answer is the sand, not more chlorine.
+- [ ] 🚨 **pH now 8.3 and has climbed every single test** (7.9→8.1→8.2→8.3). At CH 524
+      this is ACTIVE scaling risk on 7-yr Pebble Tec. Acid deferred twice for chlorine
+      emergencies — do not defer a third time.
+- [ ] **CH climbing again: 459 → 524.** Evaporation concentrating it (no calcium being
+      added). Strengthens the case for the Oct/Nov partial drain/refill.
 - [ ] ⬆️ **SAND REPLACEMENT IS NOW THE #1 ITEM** — no longer a winter nice-to-have.
       It is the leading explanation for the 8.5 ppm/night chlorine demand. Price it out.
 - [ ] If FC still won't hold after sand replacement → investigate a non-filterable
