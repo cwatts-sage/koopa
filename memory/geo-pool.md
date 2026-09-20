@@ -315,6 +315,102 @@ and with degraded sand some passes straight back through the filter.
 | 09-09 Leslie's 10:54 | 5.91 | 5.91 | 0.00 | 7.9 | 80 | 561 | 89 | 130 |
 | 09-09 TAP (hose) | 0.17 | — | — | 8.2 | 136 | 119 | 5 | **0** |
 | **09-18 Leslie's** | **0.06** | 0.23 | 0.17 | **8.1** | 84 | **493** | **71** | **42** |
+| **09-19 AM home** | **2.95** | 3.68 | **0.73** | **8.2** | 84 | 459 | 77 | **282** |
+
+### 09-19 (Sat) AM — 🚨 CHLORINE DEMAND IS REAL (post-monsoon)
+**Dose given 09-18 PM: 100 oz HASA 12.5% = ~11.4 ppm. Expected FC ~10-11. Got 2.95.**
+⇒ **~8.5 ppm consumed overnight, in the DARK (no UV).** That is not sunlight burn —
+that is organic demand from the monsoon debris load. This is the real thing.
+- **CC 0.73** (was 0.17) — back above the 0.5 ceiling. Combined chloramines forming =
+  chlorine is actively fighting something. Not yet algae (water only slightly cloudy,
+  no green), but this is the pre-algae window.
+- **FC/CYA = 2.95/77 = 3.8%** — well under the 7.5% hard floor. Pool is UNDERPROTECTED.
+- ⚠️ **pH 8.2 — highest recorded.** At CH 459 + pH 8.2 this is scale territory on
+  Pebble Tec. BUT chlorine comes first today (see decision below).
+- **PO4 42 → 282.** Big jump, but PO4 is the KNOWN-UNRELIABLE reading (249 vs 130 on
+  identical water, 09-09). Storm washed dust/organics in. Still: **do not buy remover.**
+  Consistent with the organic-load story rather than contradicting it.
+- ✅ Dilution gifts holding: **CH 493 → 459**, CYA 71 → 77, TA 84 steady.
+
+**⚠️ ORDER-OF-OPERATIONS CALL: chlorine BEFORE acid today.**
+Normally pH 8.2 screams acid first. Not here — chlorine at 3.8% of CYA with CC 0.73 is
+the emergency; scale is a slow problem, an algae bloom is a fast one. Also, dumping
+acid while FC is this low does nothing for sanitation. Chlorine tonight, acid tomorrow.
+(High pH does weaken HOCl — which is exactly why FC needs to go UP, not why acid goes first.)
+
+**Prescribed 09-19:**
+- **NOW / today: 110 oz HASA 12.5%** (~12.5 ppm) → target FC ~15, deliberately above the
+  8-10 band to burn through the organic demand and knock CC down. Pump **2800 rpm,
+  run overnight.**
+- **HOLD the muriatic acid tonight.** Never same night as a big chlorine dose.
+- **Sunday AM: retest.** Then acid — and it'll need more than 12 oz at pH 8.2.
+
+### 🚨🚨 09-19 PART 2 — TWO FINDINGS THAT CHANGE THE DIAGNOSIS
+
+**FINDING 1: THE SAND IS DONE. Backwash accomplished NOTHING.**
+Post-backwash PSI @ 2800 = **17**. The 09-09 baseline (dirty, un-backwashed) was **also 17**.
+A freshly backwashed filter should read BELOW its dirty number. Zero change means:
+- The sand is **channeled / cemented** — water carves preferential paths straight through
+  instead of being filtered. Backwashing can't fix channeling; it just re-runs water down
+  the same channels.
+- Corroborates the flat pump curve (2800→3250 rpm = +1 PSI only). Restriction isn't dirt,
+  it's structural.
+- ⇒ **The filter is not meaningfully filtering.** This is a DIRECT contributor to the
+  organic load and the cloudiness — fines and organics pass right back into the pool.
+- ⬆️ **PRIORITY UPGRADE: sand replacement moves from "winter 2026-27 nice-to-have" to
+  the top of the list.** Still not an emergency Geo must fix this weekend, but it is now
+  the known root cause behind chlorine demand + cloudiness, not just a maintenance item.
+
+**FINDING 2: ❌❌ RETRACTED — THERE IS NO TURNOVER OR DISTRIBUTION PROBLEM.**
+
+🛑 **I got this wrong TWICE in one session. Full correction, both errors logged:**
+
+**Error A — computed on a partial schedule.** Geo first sent only "1800 RPM 6am-9am."
+I treated that as the whole schedule, calculated ~0.5 turnovers/day, and told him to
+extend to 8-10 hrs. He then sent block 2: **2100 RPM, 9am-3pm.**
+
+**Error B — invented an overnight "dead zone."** After the correction I pivoted to
+claiming the chlorine puddled in still water overnight. Geo corrected that too.
+
+### ✅ ACTUAL SCHEDULE (confirmed by Geo 09-19)
+| block | rpm | hours |
+|---|---|---|
+| 6am-9am | 1800 | 3h |
+| 9am-3pm | 2100 | 6h |
+**≈ 22,000 gal/day ≈ 2.1 turnovers/day over 9h. ✅ SOLIDLY IN THE TARGET BAND (1-2).**
+His daytime schedule is well designed. **Do not tell him to extend runtime.**
+
+### ✅ AND HE ALREADY OVERRIDES AFTER DOSING (standing habit, confirmed 09-19)
+> "I ALWAYS go to 2800 pump override after adding chemicals."
+**Last night specifically: 10 hours @ 2800, then 1 more hour @ 1800 before the 09:57 test.**
+= **~36,400 gal ≈ 3.5 turnovers of circulation** after the dose.
+
+⇒ **The chlorine was THOROUGHLY mixed. Distribution is 100% ruled out.**
+⇒ My "ambiguous instruction" self-criticism was also wrong — he never needed the
+  instruction, it's already his standard practice. **Geo's process is good. Stop
+  looking for operator error here.**
+
+### 🚨 THEREFORE: THE 8.5 ppm LOSS IS 100% REAL CONSUMPTION
+My ORIGINAL 09-19 morning read was correct. The two pump theories were both detours.
+- 100 oz × 0.114 = 11.4 ppm added, start 0.06 → **expected ~11.5 ppm**
+- Measured **2.95** → **lost 8.5 ppm in ~12h, OVERNIGHT, with full circulation, NO UV**
+- = **~0.71 ppm/hr of genuine demand in the dark**
+- Of that: ~7.8 ppm fully consumed + 0.73 ppm bound as chloramine (CC)
+
+**This is a serious chlorine demand.** No sunlight, no CYA excuse, no mixing excuse,
+no circulation excuse. Something in the water is actively eating chlorine.
+
+**Prime suspect: the DEAD SAND (Finding 1).** 17 PSI identical pre/post backwash =
+channeled media = organics are NOT being removed, they just recirculate and keep
+consuming chlorine. Filtration failure and chlorine demand are the SAME problem.
+
+**Pump guidance: NO CHANGE NEEDED. Geo's schedule + override habit are both correct.**
+
+**Decision rule for Sunday AM:**
+- FC holds ≥8 **and** CC <0.5 → demand is broken. Dose **16 oz muriatic**, resume normal.
+- FC 4-8 **or** CC still ≥0.5 → still feeding. Re-dose chlorine, acid waits again.
+- FC <4 **or** any green/cloudy worsening → **text me**, we're in a real bloom and the
+  plan changes to a proper SLAM (sustained high FC, not one-shot doses).
 
 ### 09-18 (Fri) — MONSOON WASHOUT
 **Context:** 2 monsoon nights + 1 day of light on/off rain. Geo manually vacuumed and
@@ -343,6 +439,8 @@ simply ran out of chlorine, it wasn't losing a fight. Caught in the window.
 
 **Open ask:** post-backwash filter PSI @ 2800 rpm. Cleanest available read on how far
 the sand has degraded ahead of the winter replacement. Baseline was 17 PSI @ 2800.
+✅ **ANSWERED 09-19: post-backwash PSI = 17 @ 2800. IDENTICAL to the dirty baseline.**
+⇒ See "SAND IS DONE" + "TURNOVER DEFICIT" sections under 09-19.
 
 **⚠️ Leslie's slip AGAIN prescribed the pool-wrecking routine:** tabs for sanitizing,
 12 oz shock weekly, 6 oz Perfect Weekly. Told Geo to ignore it — this is the exact
@@ -389,7 +487,28 @@ remainder. Nothing was added — it's residual. **And PO4 was never 0**, so the
 **Go-forward kit: HASA 12.5% liquid + baking soda + muriatic acid ONLY.**
 
 ## TODO next Geo session
-- [ ] **09-19 AM: get FC + clarity report.** Decision rule above. Then 12 oz muriatic.
+- [x] ~~09-19 AM: FC + clarity report~~ ✅ **DONE** — FC 2.95, CC 0.73, pH 8.2. Demand is
+      REAL. Prescribed 110 oz chlorine, acid DEFERRED to Sunday. See 09-19 entry.
+- [ ] **09-20 (Sun) AM: retest — this is the decision point.** FC≥8 & CC<0.5 → 16 oz
+      muriatic + back to normal. FC<4 or worsening → SLAM protocol, not one-shot doses.
+- [ ] **pH 8.2 is unresolved and climbing** (7.9 → 8.1 → 8.2). Once FC is stable this
+      becomes the priority — at CH 459 it's a scaling risk on 7-yr Pebble Tec.
+- [ ] ⬆️ **SAND REPLACEMENT IS NOW THE #1 ITEM** — no longer a winter nice-to-have.
+      It is the leading explanation for the 8.5 ppm/night chlorine demand. Price it out.
+- [ ] If FC still won't hold after sand replacement → investigate a non-filterable
+      demand source (e.g. organics in dead-flow zones from the weak pool returns).
+
+## 🧠 PROCESS LESSONS (09-19 — expensive ones, do not repeat)
+1. **ASK FOR THE COMPLETE PICTURE BEFORE COMPUTING.** I ran turnover math on one
+   schedule block, then had to retract when block 2 arrived. Ask "is that the full
+   schedule?" first.
+2. **DON'T ASSUME OPERATOR ERROR.** I twice built theories on Geo doing something
+   wrong (not overriding the pump, letting chlorine sit). He was already doing it
+   right both times. He is a 50-yr aviation maintenance tech — **his process
+   discipline is excellent. Ask what he did before theorizing about what he missed.**
+3. **WHEN THE FIRST ANSWER KEEPS SURVIVING, TRUST IT.** My initial "real organic
+   demand" read was right. I talked myself out of it twice chasing tidier mechanical
+   explanations. Novel theories need evidence, not just plausibility.
 - [ ] **Get post-backwash filter PSI @ 2800 rpm** (baseline 17) — sand degradation check
 - [ ] **Watch TDS** — read 3500 on 09-18 vs 1500 on 09-09. Dilution should push it DOWN,
       so this is either storm load or test variance. Confirm on next test before acting.
