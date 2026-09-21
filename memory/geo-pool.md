@@ -317,6 +317,45 @@ and with degraded sand some passes straight back through the filter.
 | **09-18 Leslie's** | **0.06** | 0.23 | 0.17 | **8.1** | 84 | **493** | **71** | **42** |
 | **09-19 AM home** | **2.95** | 3.68 | **0.73** | **8.2** | 84 | 459 | 77 | **282** |
 | **09-20 AM home** | **7.86** | 8.45 | **0.59** | **8.3** | 85 | **524** | 75 | **342** |
+| **09-21 AM home** | **2.52** | 2.89 | **0.37** | **7.8** | 82 | **514** | 71 | 243 |
+
+### 09-21 (Mon) AM — ✅ ACID HELD · ✅ CC BROKE 0.5 · ⚠️ FC burn is UV, not organics
+**Dose 09-20: 20 oz muriatic AM + 70 oz HASA PM.**
+
+**pH 8.3 → 7.8. FIRST DOWNWARD MOVE ALL WEEK** (7.9→8.1→8.2→8.3→**7.8**). 20 oz was
+the right size. TA 85 → 82 (−3, normal for that acid dose, still in the 70-80 band).
+⇒ Acid DOES hold ~24h. Aeration is not beating a properly-sized dose. **No need for
+  daily acid** — weekly correction works if the dose is sized right.
+
+**✅ CC 0.59 → 0.37 — UNDER THE 0.5 CEILING for the first time since 09-18.**
+
+**⚠️ BUT FC: 70 oz = 8.0 ppm onto 7.86 = expected ~15.9. Measured 2.52 = ~13.4 ppm gone.**
+Worse than 7.6 (09-20) and 8.5 (09-19) — on paper the demand *tripled*.
+
+**🔑 RESOLUTION — THIS IS NOT ORGANIC DEMAND. The CC tells us so.**
+A real organic/algae fight produces combined chloramines: FC falls **and CC RISES**.
+Here FC fell hard while **CC FELL to 0.37** and the water is **clear**. Contradiction.
+What burns FC with no CC residue: **UV + heat**. Conditions confirm it —
+**upper 90s-low 100s days, upper 70s-low 80s nights** (Geo 09-21), and the prior two
+nights' losses were measured OVERNIGHT (no UV) while this 24h window included a full
+brutal Phoenix day. **Not comparable measurements.** Earlier losses = dark/organic.
+This loss = daylight/UV. The organic demand is genuinely resolving (CC proves it).
+Also: FC 7.86 start = more FC available to burn; loss scales with concentration.
+
+**⇒ DEMAND IS BREAKING. The 09-20 decision rule's first branch (CC <0.5) is MET.**
+Sand is still the #1 capital item, but it is no longer chasing an active chlorine fire.
+
+**Other lines — all quietly good:**
+- **CH 524 → 514** ✅ and pH now 7.8 ⇒ scaling risk materially reduced vs 8.3/524
+- **CYA 71** (was 75) ✅ mid-range · **TA 82** ✅ · Iron 0.1 / Cu 0.2 trace, non-issue
+- **PO4 342 → 243.** Falling. Still the unreliable test. Still no remover. Ignore.
+- **FC/CYA = 2.52/71 = 3.5%** ⚠️ below the 7.5% floor *right now* — needs tonight's dose,
+  but this is a low morning number, not a crisis (clear water, CC 0.37).
+
+### ⭐ GEO'S ASK (09-21): WEEKLY-ONLY MAINTENANCE SCHEDULE
+Geo wants to **test once a week**, dose from that, and coast to the winter sand change
+(~$500). Pool is clear. **This is now the operating mode — daily micromanagement ends.**
+See "WEEKLY MAINTENANCE PLAN" section below.
 
 ### 09-20 (Sun) AM — demand PERSISTS, but the trend is finally bending
 **Dose 09-19 PM: 110 oz HASA 12.5% = 12.5 ppm. Start 2.95 → expected ~15.5. Got 7.86.**
@@ -534,19 +573,60 @@ remainder. Nothing was added — it's residual. **And PO4 was never 0**, so the
 **Go-forward kit: HASA 12.5% liquid + baking soda + muriatic acid ONLY.**
 
 ## TODO next Geo session
+
+## 📅 WEEKLY MAINTENANCE PLAN (adopted 09-21, Geo's request)
+**Mode change: weekly test + dose. No more daily micromanagement.** Goal is simply to
+hold the pool safe and clear until the winter sand replacement (~$500).
+
+**Every Monday AM: run AccuBlue, text me the panel. I return the week's doses.**
+
+### Standing weekly baseline (adjust from the test)
+| item | dose | when |
+|---|---|---|
+| **HASA 12.5% chlorine** | **~45-50 oz** | every 2-3 days, evening, pump @ 2800 |
+| **Muriatic 31.45%** | **~16-20 oz** | weekly, morning, only if pH ≥ 7.9 |
+| **Baking soda** | only if TA < 70 | 1.5 lb ≈ +10 ppm |
+
+⚠️ **Chlorine CANNOT be weekly.** At ~3-5 ppm/day summer burn, a single weekly dose
+big enough to last 7 days would start near 30 ppm. **Evening dose every 2-3 days is
+the minimum viable cadence.** Testing is weekly; chlorine addition is not.
+
+### Mid-week no-test rule (keeps it simple)
+- **Every 2nd-3rd evening: 45-50 oz HASA, pump 2800, run overnight.** No test needed.
+- Hotter week / heavy use → 55-60 oz. Cooler/cloudy → 40 oz.
+- If water ever goes **cloudy or green** → stop the routine and text me.
+
+### Guardrails (the only numbers that matter)
+- **FC floor 6.5** · target 8-10 · **FC/CYA ≥ 7.5%** (at CYA 71 ⇒ **FC ≥ 5.3 absolute floor**)
+- **CC < 0.5** — if CC ≥ 0.5 two weeks running, that's organic demand, tell me
+- **pH ceiling 7.8** — at CH ~514 do not let it ride above 7.8
+- Never mix acid and chlorine same day — **acid AM, chlorine PM, 6+ hrs apart**
+
+### What to IGNORE (do not spend money on these)
+- **Phosphates** — unreliable test, feeding nothing while water is clear. No remover.
+- **CH ~514** — cannot be lowered without draining. Manage via pH. Not an emergency.
+- **CYA 71** — fine. Never add stabilizer. Never use tabs.
+- **Iron 0.1 / Copper 0.2** — trace, non-issue.
+- **Leslie's printout recommendations** — that regimen is what wrecked the pool.
+
+### Winter (the one real spend)
+- **Sand replacement, Triton II TR-100C, ~$500.** Everything above is a holding action
+  until this happens. While the tech is on site: have him look at the two weak pool
+  return lines / eyeballs. ❌ NOT the main drain. ❌ NOT the vac.
+
 - [x] ~~09-19 AM: FC + clarity report~~ ✅ **DONE** — FC 2.95, CC 0.73, pH 8.2. Demand is
       REAL. Prescribed 110 oz chlorine, acid DEFERRED to Sunday. See 09-19 entry.
 - [x] ~~09-20 (Sun) AM: retest — decision point~~ ✅ **DONE.** FC 7.86, CC 0.59, pH 8.3.
       Middle branch: demand persists (~7.6 ppm/night) BUT FC/CYA hit 10.5% = protected.
       Flipped to acid-first: 20 oz muriatic AM + 70 oz chlorine PM.
-- [ ] **09-21 (Mon) AM: does the acid hold?** If pH is back ≥8.0 in one day, aeration is
-      beating periodic dosing → switch to small DAILY acid. If CC still ≥0.5, demand is
-      structural and the answer is the sand, not more chlorine.
-- [ ] 🚨 **pH now 8.3 and has climbed every single test** (7.9→8.1→8.2→8.3). At CH 524
-      this is ACTIVE scaling risk on 7-yr Pebble Tec. Acid deferred twice for chlorine
-      emergencies — do not defer a third time.
-- [ ] **CH climbing again: 459 → 524.** Evaporation concentrating it (no calcium being
-      added). Strengthens the case for the Oct/Nov partial drain/refill.
+- [x] ~~09-21 (Mon) AM: does the acid hold?~~ ✅ **YES.** pH 8.3 → 7.8 on 20 oz, held 24h.
+      **No daily acid needed** — weekly correction works when sized right. CC also
+      broke under 0.5 (0.37) ⇒ organic demand is resolving, NOT structural.
+- [x] ~~pH climbing every test~~ ✅ **BROKEN 09-21** (7.8). At CH 514 + pH 7.8 scaling
+      risk is materially reduced. Keep ceiling at 7.8.
+- [ ] **CH 524 → 514, roughly flat.** No calcium being added; evaporation vs rain.
+      Not urgent. Revisit a partial drain/refill only if it trends back over ~550.
+- [ ] **Next test: Monday 09-28** (weekly cadence now). Watch: does CC stay <0.5?
 - [ ] ⬆️ **SAND REPLACEMENT IS NOW THE #1 ITEM** — no longer a winter nice-to-have.
       It is the leading explanation for the 8.5 ppm/night chlorine demand. Price it out.
 - [ ] If FC still won't hold after sand replacement → investigate a non-filterable
