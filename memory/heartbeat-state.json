@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1789804659,
-    "systems_check": 1789804659,
-    "imsg_watchdog": 1789804659
+    "systems_check": 1790072835,
+    "imsg_watchdog": 1790072835
   },
-  "notes": "2026-09-19 SAT: imsg PASS (IMCore v2), gateway 2026.7.1-2, site 200, pot 101.0 (Marion 25). Saddle sweep 645/0 hits. Wk2 8/11 picks, no games today, Sunday slate locks from noon ET. OPEN for Chris: (1) iMessage Start-new-conversations-from setting (confirmed 187/187 sends used email alias), (2) AZURE_CREDENTIALS repo secret for CI/CD. | 2026-09-17 THU: imsg PASS, gateway 2026.7.1-2. Wk1 standings VERIFIED INTACT after multiple automated cron runs (Marion 25, pot exactly 101.0) - the s"
+  "notes": "2026-09-22 TUE: FULL AUTOMATION PROVEN. Wk2 closed by cron unattended (pot exactly 202.0, Marion 40 / George 34.5 / Donna 27). Tue 6am refresh cron ran ok, staged Week 3 (16 games, first lock Thu 9/24 7:15pm ET) WITHOUT disturbing banked Wk2 standings. Told Chris scoring is automated - he had asked 3x for scoring the crons already did. OPEN: AZURE_CREDENTIALS secret for CI/CD; iMessage Start-new-conversations-from setting. | 2026-09-19 SAT: imsg PASS (IMCore v2), gateway 2026.7.1-2, site 200, pot 101.0 (Marion 25). Saddle sweep 645/0 hits. Wk2"
 }
