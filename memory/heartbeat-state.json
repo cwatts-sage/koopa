@@ -3,9 +3,9 @@
     "email": null,
     "calendar": null,
     "weather": null,
-    "saddle_watch": 1789804659,
-    "systems_check": 1790231225,
-    "imsg_watchdog": 1790231225
+    "saddle_watch": 1790323059,
+    "systems_check": 1790323059,
+    "imsg_watchdog": 1790323059
   },
-  "notes": "2026-09-24 THU: imsg PASS, gateway 2026.7.1-2, site 200, pot 202.0 intact (Marion 40). Wk3 4/11 picks, first lock tonight Thu 7:15pm ET (Falcons@Packers). Both scoring crons healthy (Wed/Thu ran 2h ago ok). Automation running the full cycle unattended since 09-22. No inbound from Chris since 09-22. | 2026-09-23 WED: imsg PASS, gateway 2026.7.1-2, site 200, pot 202.0 (Wk1+Wk2 banked). Wk3 open, first lock Thu "
+  "notes": "2026-09-25 FRI: imsg PASS, gateway 2026.7.1-2, site 200. Wk3 opener scored by cron (Ralph sole correct on ATL 35-14), pot correctly held at 202.0. Saddle sweep clean. Automation running 3rd straight week without intervention. No inbound from Chris since 09-22. OPEN: AZURE_CREDENTIALS secret; iMessage sender setting. | 2026-09-24 THU: imsg PASS, gateway 2026.7.1-2, site 200, pot 202.0 intact (Marion 40). Wk3 4/11 pick"
 }
