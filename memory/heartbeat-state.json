@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1790323059,
-    "systems_check": 1790490429,
-    "imsg_watchdog": 1790490429
+    "systems_check": 1790578655,
+    "imsg_watchdog": 1790578655
   },
-  "notes": "2026-09-27 SUN: imsg PASS, gateway 2026.7.1-2, site 200. Wk3 1/16 locked (Thu game), Sunday noon batch locks in ~9.5h. 10/11 picks in (Casi missing). Pot 202.0. Automation stable. | 2026-09-26 SAT: imsg PASS, gateway 2026.7.1-2, site 200, pot 202.0 (Marion 40). Wk3 in progress (opener scored"
+  "notes": "2026-09-28 MON: imsg PASS, gateway 2026.7.1-2, site 200, pot 202.0. Wk3 now 15/16 (SNF scored by cron after Chris asked to re-run). Donna 11 leads, Chris 10. MNF Eagles@Bears tonight 8:15pm closes the week -> F1 banks. | 2026-09-27 SUN: imsg PASS, gateway 2026.7.1-2, site 200. Wk3 1/16 locked (Thu game), Sunday noon batch locks i"
 }
