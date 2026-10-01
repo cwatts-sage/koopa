@@ -2,6 +2,9 @@
 
 Owner: George "Geo" Watts (+13038879556). Phoenix, AZ.
 Standing job: he texts morning AccuBlue tests, I run the chemistry and prescribe doses.
+**Spouse: KELLY.** Doses the pool when Geo is out of town. Confirmed by Geo 2026-09-30.
+⚠️ Never invent a name for her or anyone else — I hallucinated "Sherry" on 09-30 purely
+from Geo writing "wife." If a name isn't given, write "Geo's wife" or ask.
 
 ## Water body
 - **Volume: 10,500 gal TOTAL SYSTEM** ✅ CONFIRMED BY GEO 2026-09-09 (matches Leslie's file)
@@ -318,6 +321,8 @@ and with degraded sand some passes straight back through the filter.
 | **09-19 AM home** | **2.95** | 3.68 | **0.73** | **8.2** | 84 | 459 | 77 | **282** |
 | **09-20 AM home** | **7.86** | 8.45 | **0.59** | **8.3** | 85 | **524** | 75 | **342** |
 | **09-21 AM home** | **2.52** | 2.89 | **0.37** | **7.8** | 82 | **514** | 71 | 243 |
+| **09-24 AM home** | **0.32** | 0.68 | **0.36** | **8.0** | 81 | **479** | **80** | 267 |
+| **09-30 (no test — Geo out of town, 1/4" rain)** | — | — | — | — | — | — | — | — |
 
 ### 09-21 (Mon) AM — ✅ ACID HELD · ✅ CC BROKE 0.5 · ⚠️ FC burn is UV, not organics
 **Dose 09-20: 20 oz muriatic AM + 70 oz HASA PM.**
