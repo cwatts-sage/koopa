@@ -44,6 +44,10 @@
   - No admin permissions; casual chats only
 - **Steve** (+18177391612) — Added 2026-05-18 per Chris's request
   - No admin permissions; casual chats only
+- **Kelly** (+13038879546) — Added 2026-10-03 per Chris's request
+  - Standard user, no admin permissions; casual chats only
+  - Pool member (appears in Week 4 scoring)
+  - Note: number is 1 digit off from George's (+13038879556) — likely family/related
 
 ## IT Notes
 
