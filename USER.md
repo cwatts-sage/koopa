@@ -44,10 +44,14 @@
   - No admin permissions; casual chats only
 - **Steve** (+18177391612) — Added 2026-05-18 per Chris's request
   - No admin permissions; casual chats only
-- **Kelly** (+13038879546) — Added 2026-10-03 per Chris's request
+- **Kelly Watts** (+13038879546) — Added 2026-10-03 per Chris's request
+  - **George's wife; Chris's mother-in-law** (confirmed by Kelly herself 2026-10-04)
+  - ⚠️ **TWO HANDLES — both must stay in the allowlist:**
+    - `+13038879546` (phone)
+    - `kbay1@me.com` (Apple ID / iMessage email, chat id 22) — added 2026-10-04
   - Standard user, no admin permissions; casual chats only
   - Pool member (appears in Week 4 scoring)
-  - Note: number is 1 digit off from George's (+13038879556) — likely family/related
+  - Interests: fitness, weight loss, healthy meal planning (asked for meal ideas 2026-10-04)
 
 ## IT Notes
 
