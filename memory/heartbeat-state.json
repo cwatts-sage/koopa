@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1790323059,
-    "systems_check": 1791007041,
-    "imsg_watchdog": 1791007041
+    "systems_check": 1791095222,
+    "imsg_watchdog": 1791095222
   },
-  "notes": "2026-10-03 SAT: imsg PASS, gateway 2026.7.1-2, site 200, pot 303.0 (Donna 52). Wk4 opener scored (CLE 27-24). Sunday slate tomorrow. OPEN for Chris: (1) earlier scoring cron pass to close the ~45-90min latency gap he has hit 3x, (2) AZURE_CREDENTIALS secret for CI/CD, (3) iMessage sender setting. None blocking. | 2026-10-01 THU: imsg PASS, gateway 2026.7.1-2, all 3 crons scheduled, pot 303.0 (Donna 52)"
+  "notes": "2026-10-04 SUN: gateway RESTARTED at some point (pid 65002 -> 41339) but everything survived: imsg IMCore bridge still connected, all 3 crons intact, pot 303.0. Wk4 FULL 11/11 picks (Kelly submitted after my nudge to kbay1@me.com). Sunday slate locks from noon ET. | 2026-10-03 SAT: imsg PASS, gateway 2026.7.1-2, site 200, pot 303.0 (Donna 52). Wk4 opener "
 }
