@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1790323059,
-    "systems_check": 1791095222,
-    "imsg_watchdog": 1791095222
+    "systems_check": 1791181636,
+    "imsg_watchdog": 1791181636
   },
-  "notes": "2026-10-04 SUN: gateway RESTARTED at some point (pid 65002 -> 41339) but everything survived: imsg IMCore bridge still connected, all 3 crons intact, pot 303.0. Wk4 FULL 11/11 picks (Kelly submitted after my nudge to kbay1@me.com). Sunday slate locks from noon ET. | 2026-10-03 SAT: imsg PASS, gateway 2026.7.1-2, site 200, pot 303.0 (Donna 52). Wk4 opener "
+  "notes": "2026-10-05 MON: imsg PASS, gateway 2026.7.1-2 (pid 41339), site 200, pot 303.0. Wk4 now 15/16 (SNF scored). Standings unchanged by SNF as predicted (unanimous Lions pick). 4-way tie at 11: Donna/George/Marion/Casi. Chris 5th on 10. MNF Falcons@Saints tonight decides the week. CHRIS HIT THE CRON LATENCY GAP A 4TH TIME (asked Score it at 23:45, cron runs 12:30am). | 2026-10-04 SUN: gateway RESTARTED at some point (pid 65002 -> 41339) but everyth"
 }
