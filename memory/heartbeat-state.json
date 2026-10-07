@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1790323059,
-    "systems_check": 1791359818,
-    "imsg_watchdog": 1791359818
+    "systems_check": 1791361621,
+    "imsg_watchdog": 1791361621
   },
-  "notes": "2026-10-07 WED: imsg PASS, gateway 2026.7.1-2, site 200, pot 404.0 (Marion 66.3 / Donna 63.0 - tied 43 raw correct). Wk5 open (15 games, bye weeks), first lock Thu 10/8 7:15pm ET. 3 autonomous cycles done. OPEN for Chris: earlier scoring cron (5 occurrences of latency gap, concrete proposal given 10-06); AZURE_CREDENTIALS secret. | 2026-10-07 WED: imsg PASS, gateway 2026.7.1-2, site 200, pot 404.0 (Ma"
+  "notes": "2026-10-07 WED: imsg PASS, gateway 2026.7.1-2, site 200, pot 404.0 (Marion 66.3 / Donna 63.0 - tied 43 raw correct). Wk5 open (15 games, bye weeks), first lock Thu 10/8 7:15pm. 3 autonomous cycles done. OPEN: cron-latency fix (5 occurrences, concrete proposal given 10-06, awaiting one-word approval); AZURE_CREDENTIALS secret; iMessage sender setting. | 2026-10-07 WED: imsg PASS, gateway 2026.7.1-2, site 200, pot"
 }
