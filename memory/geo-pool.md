@@ -323,6 +323,73 @@ and with degraded sand some passes straight back through the filter.
 | **09-21 AM home** | **2.52** | 2.89 | **0.37** | **7.8** | 82 | **514** | 71 | 243 |
 | **09-24 AM home** | **0.32** | 0.68 | **0.36** | **8.0** | 81 | **479** | **80** | 267 |
 | **09-30 (no test — Geo out of town, 1/4" rain)** | — | — | — | — | — | — | — | — |
+| **10-06 AM home** | **0.35** | 0.39 | **0.04** | **8.2** | 86 | **546** | **68** | 300 |
+
+### 10-06 (Tue) AM — Geo back from visiting Chris. ✅ CYA BROKE · ⚠️ pH + CH need acid
+**Context:** Geo was away. **Kelly** dosed **100 oz HASA ~1 week ago** and nothing since.
+No acid in a week. Pool **clear**. Geo guessed "cloudy upper 80s" — **WRONG, see weather**.
+
+**🌡️ ACTUAL Phoenix forecast (wttr.in, pulled 10-06): 96 / 98 / 100 F, cloud 0-9%, UV 7 midday.**
+Full sun, near-triple-digits. Dosed for summer burn, NOT for Geo's cloudy estimate.
+⚠️ **LESSON: always pull the real forecast — Geo's weather impressions have been off.**
+
+**✅ CYA 80 → 68 — LOWEST SINCE THE SAGA BEGAN.** Best number on the panel.
+  → New floors at CYA 68: **FC absolute floor 5.1**, target band **7.5-8.5** (was 8-10).
+  → Materially easier pool to run. Keep never adding stabilizer/tabs.
+**✅ CC 0.04 — LOWEST CC ON RECORD.** (0.39 TC − 0.35 FC.) Zero chloramines.
+**✅ TA 86** steady — no baking soda.
+
+**⚠️ FC 0.35 = unprotected, but this is DEPLETION not DEMAND.**
+100 oz ≈ 11.4 ppm, ~7 days ago, at 3-5 ppm/day = gone by day 3. Expected.
+**CC 0.04 + clear water proves nothing ate it — the sun did.** Kelly dosed fine;
+the *cadence* stopped, that's all. **Do not read this as organic demand.**
+
+**🚨 pH 8.2 + CH 546 = today's real problem.** No acid in a week + nonstop waterfall
+aeration. CH 514 → 546 (evaporation concentrating; nothing calcium-bearing added).
+Active scaling territory on 7-yr Pebble Tec.
+
+**Prescribed 10-06:**
+- **NOW (AM): 20 oz muriatic 31.45%** → pH 8.2 → ~7.6 (same dose that held 24h on 09-21)
+- **TONIGHT (6+ hrs later): 90 oz HASA 12.5%** (~10.3 ppm) → FC ~10. Pump 2800 overnight.
+- **Thu PM: 50 oz HASA** · **Sat PM: 50 oz HASA**
+- **Mon 10-12 AM: full panel.** Watch: does CYA hold at 68? Does 20 oz acid hold 24h?
+
+**🔑 OPEN QUESTION THAT COULD SAVE $1300:** CC 0.04 + clear water is the strongest
+"no organic demand" signal yet. **If FC also HOLDS this week, the dead-sand-causes-
+chlorine-demand theory is weakened.** Sand still needs replacing (channeled, 17 PSI
+pre=post backwash), but it may not be costing chemicals. Know this before spending.
+
+## 💰 FILTER MEDIA REPLACEMENT — QUOTES IN (10-06)
+**Geo's quotes for GLASS MEDIA: $1300-$1500.** 😵‍💫 My read: **padded.**
+
+**Triton II TR-100C takes ~300 lbs sand ⇒ ~250 lbs glass (glass uses ~20% less by weight).**
+| | price/50lb bag | material total |
+|---|---|---|
+| sand | $10-15 | **$60-90** |
+| glass | $25-40 | **$125-200** |
+⇒ **Material difference is only ~$100.** Labor is IDENTICAL either way (dig out, inspect
+laterals, refill — 2-3 hrs). So $700-900 of the spread is markup / "premium upgrade" pricing.
+
+**Glass media — real pros:** ~5 micron vs 20-40 for sand; **resists channeling/cementing**
+(← the actual failure mode that killed Geo's media, so this is the one genuine benefit);
+claimed 10-15 yr life; slight negative surface charge grabs fines.
+**Honest caveat told to Geo:** his sand died at 7 yrs from normal end-of-life channeling.
+Glass *delays* that, doesn't eliminate it. **Fresh sand @ ~$500 for another 6-7 yrs is
+a perfectly defensible choice.** Glass is the better product *only at a sane price*.
+
+**✅ ACTION GIVEN TO GEO — demand ITEMIZED quotes, every bidder:**
+1. Media cost (type, lbs, price)  2. Labor hours + rate
+3. **Laterals/standpipe inspection included** ← non-negotiable, they're already in there
+4. Disposal of old sand
+**Fair all-in target: $600-900 with glass.** $1300-1500 ⇒ padding or unrequested bundling.
+**💡 Key comparison to ask for: price a STRAIGHT SAND SWAP from the same shop.**
+- sand $500 vs glass $1400 ⇒ paying $900 for a $100 upgrade. **Decline.**
+- sand $500 vs glass $700 ⇒ **take the glass, easy call.**
+
+**🔧 Free add-on while the filter is open:** have them look at the two weak pool return
+lines + eyeballs. ❌ NOT the main drain (settled). ❌ NOT the vac (Geo hand-vacs).
+
+**Geo's status 10-06: "I will get on this."** → awaiting itemized quotes.
 
 ### 09-21 (Mon) AM — ✅ ACID HELD · ✅ CC BROKE 0.5 · ⚠️ FC burn is UV, not organics
 **Dose 09-20: 20 oz muriatic AM + 70 oz HASA PM.**
@@ -631,7 +698,10 @@ the minimum viable cadence.** Testing is weekly; chlorine addition is not.
       risk is materially reduced. Keep ceiling at 7.8.
 - [ ] **CH 524 → 514, roughly flat.** No calcium being added; evaporation vs rain.
       Not urgent. Revisit a partial drain/refill only if it trends back over ~550.
-- [ ] **Next test: Monday 09-28** (weekly cadence now). Watch: does CC stay <0.5?
+- [ ] **Next test: Monday 10-12.** Watch: CYA holds 68? Acid holds 24h? **Does FC HOLD?**
+      (FC holding + CC <0.5 ⇒ sand isn't costing chemicals ⇒ changes the $ urgency)
+- [ ] **⏳ AWAITING: itemized filter quotes from Geo** (media / labor / laterals / disposal)
+      + a straight-sand-swap price from the same shop for comparison. See QUOTES section.
 - [ ] ⬆️ **SAND REPLACEMENT IS NOW THE #1 ITEM** — no longer a winter nice-to-have.
       It is the leading explanation for the 8.5 ppm/night chlorine demand. Price it out.
 - [ ] If FC still won't hold after sand replacement → investigate a non-filterable
