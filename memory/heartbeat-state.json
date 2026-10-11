@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1790323059,
-    "systems_check": 1791608210,
-    "imsg_watchdog": 1791608210
+    "systems_check": 1791694679,
+    "imsg_watchdog": 1791694679
   },
-  "notes": "2026-10-10 SAT: imsg PASS, gateway 2026.7.1-2, site 200, pot 404.0 (Marion 66.3). Wk5 7/11 picks, opener scored (TB beat DAL, unanimous miss). ACS email module VALIDATED + committed, awaiting Chris Tuesday deploy (3 steps: add ACS_CONNECTION_STRING to SWA settings, deploy, test send). Sunday slate tomorrow. | 2026-10-08 THU: imsg PASS, gateway 2026.7.1-2, site 200, pot 404.0. Wk"
+  "notes": "2026-10-11 SUN: imsg PASS, gateway running, API fully healthy after an unplanned mid-week deploy at 03:30Z (manual swa deploy, provider still SwaCli). All endpoints 200, pot 404.0 intact. George unblocked + submitted. Wk5 9/11 (missing Casi, Sean). Noon lock in ~7h. | 2026-10-10 SAT: imsg PASS, gateway 2026.7.1-2, site 200, pot"
 }
