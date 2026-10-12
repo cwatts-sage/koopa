@@ -125,16 +125,31 @@ Geo reports:
   - ⚠️ Because it self-compensates, **rising pressure/dirty sand can be masked** —
     the pump quietly works harder instead of flow visibly dropping.
 
-### Pump curve logged 2026-09-09 (baseline — re-log after sand change)
-| RPM | filter PSI |
-|---|---|
-| 1700 | 6 |
-| 2800 | 17 |
-| 3250 (max) | 18 |
+### Pump curve — 09-09 baseline vs 10-12 RE-LOG ⚠️ VERDICT CHANGED
+| RPM | 09-09 | **10-12** |
+|---|---|---|
+| 1700/1800 | 6 | **7** |
+| 2800 | 17 | **17** |
+| 3250 (max) | **18** | **21** |
 
-+450 rpm from 2800→3250 buys only +1 PSI. That flattening = filter restriction,
-corroborating the bad sand. **→ 2800 RPM is the operating sweet spot; above it is
-wasted electricity.**
+🚨 **2026-10-12: THE CURVE IS NO LONGER FLAT. "SAND IS DONE" IS DOWNGRADED.**
+- 09-09: 2800→3250 bought **+1 PSI** ⇒ I called it a hard restriction = cemented/channeled
+  media. That was my single strongest sand-replacement argument.
+- 10-12: same step buys **+4 PSI**. The filter responds to RPM like normally-loaded media.
+- **Most likely explanation:** the 09-09 "18" was taken on a monsoon-debris-loaded filter
+  where DIRT was choking high-RPM flow. Post-monsoon + weekly vacuuming, it passes water fine.
+- ⚠️ **Also walked back: the "17 PSI identical pre/post backwash" finding (09-19).**
+  That backwash was only ~200 gal on a big TR-100C — likely too short to clear anything.
+  **One weak data point, and I built a $1300 recommendation on it.**
+
+### ✅ GAUGE VALIDATED 10-12 (ruled out the boring alternative)
+I raised the possibility of a stuck/dead gauge (reads same number forever). Geo checked:
+**pump off = 0 PSI**, and it tracks RPM cleanly 7/17/21. **Gauge is ~1 year old.**
+⇒ Readings are real. Not instrument error.
+💡 **KEEP THIS CHECK:** any time a PSI reading looks suspiciously unchanging, ask for
+pump-off zero + a 3-point RPM sweep BEFORE theorizing about the media.
+
+**→ 2800 RPM remains the operating sweet spot.**
 
 ## Chemistry targets for THIS pool
 - FC **8-10 ppm** (hard floor 6.5 — CYA is high, ratio matters more than absolute)
@@ -359,7 +374,32 @@ Active scaling territory on 7-yr Pebble Tec.
 chlorine-demand theory is weakened.** Sand still needs replacing (channeled, 17 PSI
 pre=post backwash), but it may not be costing chemicals. Know this before spending.
 
-## 💰 FILTER MEDIA REPLACEMENT — QUOTES IN (10-06)
+## 🛑 FILTER MEDIA REPLACEMENT — **ON HOLD, DO NOT BUY** (decided 10-12)
+**Recommendation REVERSED 2026-10-12. Do not spend $1300-1500 on glass — and do not
+spend ~$500 on sand right now either.** "Media is 7 yrs old" is not a reason to spend
+while every performance indicator is green.
+
+**Three independent lines of evidence say the filter is NOT the problem:**
+1. ✅ **Pressure curve responds normally to RPM** (10-12 re-log, +4 PSI at the top)
+2. ✅ **CC ~0.00 on two consecutive tests** (0.04 on 10-06, 0.00 Leslie's 10-12)
+3. ✅ **Water clear through a storm AND a heavy leaf dump, zero algae**
+⇒ A filter that isn't filtering shows up as organic load, cloudiness, and chlorine
+  demand. **None of the three are present.**
+
+### 📉 REPLACE THE MEDIA ONLY WHEN THE POOL ASKS — trigger list
+- **Filter PSI climbs above 17 @ 2800 and STAYS there after a *proper* backwash**
+  (run until the sight glass is genuinely clear — NOT a token 200 gal)
+- **Water persistently cloudy** while chemistry is otherwise in range
+- **CC ≥ 0.5 on two consecutive tests**
+Any one of those ⇒ buy media. Until then it's $1300 of peace of mind.
+
+**Told Geo 10-12: tell the quoting shops you're holding.** Nothing is lost by waiting —
+winter/offseason quotes typically soften anyway.
+
+**Open task (no rush):** one FULL proper backwash → then PSI @ 2800. If it lands
+meaningfully under 17, the question is closed for a year.
+
+### (historical — quotes gathered 10-06, now on hold)
 **Geo's quotes for GLASS MEDIA: $1300-$1500.** 😵‍💫 My read: **padded.**
 
 **Triton II TR-100C takes ~300 lbs sand ⇒ ~250 lbs glass (glass uses ~20% less by weight).**
