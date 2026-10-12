@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1790323059,
-    "systems_check": 1791694679,
-    "imsg_watchdog": 1791694679
+    "systems_check": 1791786429,
+    "imsg_watchdog": 1791786429
   },
-  "notes": "2026-10-11 SUN: imsg PASS, gateway running, API fully healthy after an unplanned mid-week deploy at 03:30Z (manual swa deploy, provider still SwaCli). All endpoints 200, pot 404.0 intact. George unblocked + submitted. Wk5 9/11 (missing Casi, Sean). Noon lock in ~7h. | 2026-10-10 SAT: imsg PASS, gateway 2026.7.1-2, site 200, pot"
+  "notes": "2026-10-12 MON: imsg PASS, gateway running, site 200. Wk5 14/15 scored (SNF Ravens 30-23 included), pot correctly 404.0, George leads wk5 on 9. All 11 submitted. SIXTH cron-latency occurrence (Chris asked Score SNF 11:49pm, cron ran 12:30am). MNF Bills@Rams tonight closes Wk5. | 2026-10-11 SUN: imsg PASS, gateway running, API fully health"
 }
