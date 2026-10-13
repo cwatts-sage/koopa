@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "saddle_watch": 1790323059,
-    "systems_check": 1791786429,
-    "imsg_watchdog": 1791786429
+    "systems_check": 1791872829,
+    "imsg_watchdog": 1791872829
   },
-  "notes": "2026-10-12 MON: imsg PASS, gateway running, site 200. Wk5 14/15 scored (SNF Ravens 30-23 included), pot correctly 404.0, George leads wk5 on 9. All 11 submitted. SIXTH cron-latency occurrence (Chris asked Score SNF 11:49pm, cron ran 12:30am). MNF Bills@Rams tonight closes Wk5. | 2026-10-11 SUN: imsg PASS, gateway running, API fully health"
+  "notes": "2026-10-13 TUE: Wk5 BANKED, pot exactly 505.0 (4th straight automated close). Donna 79.0 retakes lead; George 71.4 / Marion 71.3 split by 0.1 (leftover-tenth rotation deciding 2nd). Chris 5th 54.2. SEVENTH cron-latency occurrence (asked 11:48pm, cron 12:30am) - I told Chris I would stop raising the fix unprompted, so answering only. | 2026-10-12 MON: imsg PASS, gateway running, site 2"
 }
